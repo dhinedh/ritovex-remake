@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import { Award, Briefcase, Star, Users } from "lucide-react";
+import { Award, Briefcase, Star, Users, Phone } from "lucide-react";
+import aboutImage from "@/assets/about-image.jpg";
 
 const stats = [
-  { icon: Briefcase, value: 260, suffix: "+", label: "We deliver great work always" },
-  { icon: Star, value: 18, suffix: "+", label: "Experience you can count on" },
-  { icon: Award, value: 26, suffix: "+", label: "Award-Winning Work, Trusted Results" },
+  { icon: Briefcase, value: 200, suffix: "+", label: "We deliver great work always" },
+  { icon: Award, value: 10, suffix: "+", label: "Experience you can count on" },
+  { icon: Star, value: 20, suffix: "+", label: "Award-Winning Work, Trusted Results" },
   { icon: Users, value: 5, suffix: "K+", label: "We have happy Clients worldwide" },
 ];
 
@@ -62,28 +63,67 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Stats grid */}
+        {/* Content: Image left, Stats right */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid lg:grid-cols-2 gap-8 items-end"
         >
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className="bg-secondary rounded-2xl p-6 lg:p-8 text-center group hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-xl bg-background flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-foreground/10">
-                <stat.icon className="w-5 h-5 text-foreground group-hover:text-primary-foreground" />
-              </div>
-              <Counter target={stat.value} suffix={stat.suffix} />
-              <p className="text-sm text-muted-foreground mt-2 group-hover:text-primary-foreground/70">
-                {stat.label}
-              </p>
+          {/* Image */}
+          <div className="relative">
+            <div className="rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-[3/4]">
+              <img
+                src={aboutImage}
+                alt="Team member"
+                className="w-full h-full object-cover"
+              />
             </div>
-          ))}
+            {/* Decorative blob behind top-right */}
+            <div className="absolute -top-4 -right-4 w-32 h-32 bg-secondary rounded-full -z-10" />
+          </div>
+
+          {/* Stats grid */}
+          <div>
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              {stats.map((stat, i) => (
+                <div
+                  key={i}
+                  className="bg-secondary rounded-2xl p-6 flex flex-col gap-3"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-xl border border-border bg-background flex items-center justify-center">
+                      <stat.icon className="w-4 h-4 text-foreground" />
+                    </div>
+                    <Counter target={stat.value} suffix={stat.suffix} />
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-snug">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA row */}
+            <div className="flex items-center gap-6">
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-7 py-3.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+              >
+                More About Us
+              </a>
+              <div className="flex items-center gap-2 text-sm">
+                <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center">
+                  <Phone className="w-4 h-4 text-foreground" />
+                </div>
+                <div>
+                  <p className="text-xs text-muted-foreground leading-none">Get free Quote</p>
+                  <p className="font-semibold text-foreground">22 (00) 356 7890</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
