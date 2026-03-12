@@ -19,8 +19,9 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
+    <header className="sticky top-0 z-50 w-full">
+      <div className="bg-background/80 backdrop-blur-md border-b border-border w-full">
+        <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-heading text-xl font-bold text-foreground">
           <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
@@ -78,6 +79,7 @@ const Navbar = () => {
             className="w-6 h-0.5 bg-foreground rounded-full transition-colors"
           />
         </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -102,8 +104,26 @@ const Navbar = () => {
                   <ThemeToggle />
                 </div>
               </div>
-              {/* Spacer for the absolute positioned toggle button */}
-              <div className="w-10 h-10" />
+              
+              {/* Mobile toggle (duplicated here to ensure visibility above menu background) */}
+              <button
+                className="relative w-10 h-10 flex flex-col items-center justify-center z-[60]"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label="Toggle menu"
+              >
+                <motion.span
+                  animate={mobileOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+                  className="w-6 h-0.5 bg-foreground rounded-full mb-1.5 transition-colors"
+                />
+                <motion.span
+                  animate={mobileOpen ? { opacity: 0, x: -10 } : { opacity: 1, x: 0 }}
+                  className="w-6 h-0.5 bg-foreground rounded-full mb-1.5 transition-colors"
+                />
+                <motion.span
+                  animate={mobileOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+                  className="w-6 h-0.5 bg-foreground rounded-full transition-colors"
+                />
+              </button>
             </div>
 
             <nav className="flex-1 overflow-y-auto px-6 py-8 flex flex-col bg-gradient-to-b from-transparent to-accent/5">
