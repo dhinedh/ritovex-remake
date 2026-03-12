@@ -88,20 +88,22 @@ const Navbar = () => {
             animate={{ clipPath: "circle(150% at 90% 5%)", opacity: 1 }}
             exit={{ clipPath: "circle(0% at 90% 5%)", opacity: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-50 lg:hidden flex flex-col bg-background/95 backdrop-blur-2xl"
+            className="fixed inset-0 z-50 lg:hidden flex flex-col bg-background/98 backdrop-blur-2xl overflow-hidden"
           >
-            <div className="flex items-center justify-between py-6 px-4 border-b border-border/10">
+            <div className="flex items-center justify-between py-4 px-4 border-b border-border/10">
               <div className="flex items-center gap-4">
                 <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 font-heading text-xl font-bold text-foreground">
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center border border-primary/20">
-                    <span className="text-primary text-lg font-black italic">Z</span>
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <span className="text-primary-foreground text-sm font-bold">Z</span>
                   </div>
-                  <span className="tracking-tight italic uppercase">Zech Soft</span>
+                  Zech Soft
                 </Link>
-                <div className="scale-110">
+                <div className="scale-90">
                   <ThemeToggle />
                 </div>
               </div>
+              {/* Spacer for the absolute positioned toggle button */}
+              <div className="w-10 h-10" />
             </div>
 
             <nav className="flex-1 overflow-y-auto px-6 py-8 flex flex-col bg-gradient-to-b from-transparent to-accent/5">
