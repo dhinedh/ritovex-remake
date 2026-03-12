@@ -29,7 +29,7 @@ const AboutUs = () => {
             <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-secondary/20 text-foreground">
                 <div className="absolute inset-0">
                     {/* Vibrant Startup Mesh */}
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(139,92,246,0.15),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(249,115,22,0.12),transparent_50%),radial-gradient(circle_at_50%_50%,rgba(6,182,212,0.1),transparent_50%)]" />
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(139,92,246,0.15),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(249,115,22,0.12),transparent_50%),radial-gradient(circle_at_50%_50%,rgba(6,182,212,0.1),transparent_50%)] dark:opacity-40" />
 
                     {/* Grid Pattern */}
                     <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
@@ -123,7 +123,7 @@ const AboutUs = () => {
                                 hidden: { opacity: 0, scale: 0.8 },
                                 visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } }
                             }}
-                            className="inline-flex items-center gap-2 border border-black/5 rounded-full px-4 py-1.5 bg-white/50 backdrop-blur-md mb-6 shadow-sm"
+                            className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 mb-6 shadow-sm"
                         >
                             <motion.span
                                 animate={{
@@ -133,7 +133,7 @@ const AboutUs = () => {
                                 transition={{ duration: 2, repeat: Infinity }}
                                 className="w-2 h-2 rounded-full bg-accent"
                             />
-                            <span className="text-xs font-bold text-foreground/80 uppercase tracking-widest">
+                            <span className="text-xs font-bold text-foreground/80 dark:text-foreground/90 uppercase tracking-widest">
                                 Our Story
                             </span>
                         </motion.div>
@@ -142,10 +142,10 @@ const AboutUs = () => {
                                 hidden: { opacity: 0, y: 30 },
                                 visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
                             }}
-                            className="font-heading text-5xl lg:text-8xl font-black mb-8 leading-[1.1] tracking-tight"
+                            className="font-heading text-5xl lg:text-8xl font-black mb-8 leading-[1.1] tracking-tight text-foreground"
                         >
                             Thinking Ahead <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary">Innovating Now</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary dark:from-white dark:via-accent dark:to-white">Innovating Now</span>
                         </motion.h1>
                         <motion.p
                             variants={{

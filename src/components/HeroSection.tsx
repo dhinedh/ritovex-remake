@@ -50,7 +50,7 @@ const HeroSection = () => {
                 rotate: [0, 90, 0]
               }}
               transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-              className="absolute -top-20 -right-20 w-64 h-64 bg-accent/20 rounded-full blur-3xl -z-10"
+              className="absolute -top-20 -right-20 w-64 h-64 bg-accent/20 dark:bg-accent/10 rounded-full blur-3xl -z-10"
             />
             <motion.div
               animate={{
@@ -59,7 +59,7 @@ const HeroSection = () => {
                 x: [0, 50, 0]
               }}
               transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-20 -left-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl -z-10"
+              className="absolute -bottom-20 -left-20 w-80 h-80 bg-primary/10 dark:bg-primary/5 rounded-full blur-3xl -z-10"
             />
 
             <motion.div
@@ -89,15 +89,15 @@ const HeroSection = () => {
               <motion.div
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-6 -left-6 bg-background/80 backdrop-blur-md p-4 rounded-xl border border-border shadow-xl z-20 hidden sm:block"
+                className="absolute -bottom-6 -left-6 glass p-4 rounded-xl shadow-xl z-20 hidden sm:block"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-primary">
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white shadow-lg shadow-accent/20">
                     <span className="font-bold text-lg">99%</span>
                   </div>
                   <div>
                     <p className="text-[10px] text-muted-foreground uppercase tracking-wider font-bold">Client</p>
-                    <p className="text-sm font-bold">Satisfaction</p>
+                    <p className="text-sm font-bold text-foreground">Satisfaction</p>
                   </div>
                 </div>
               </motion.div>

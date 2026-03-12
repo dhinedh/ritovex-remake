@@ -3,18 +3,18 @@ import { Phone, Mail, MapPin, Instagram, Twitter, Facebook, Linkedin } from "luc
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8">
+    <footer className="bg-primary dark:bg-background text-primary-foreground dark:text-foreground pt-16 pb-8 border-t border-border/10">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1 text-center md:text-left">
             <Link to="/" className="flex items-center justify-center md:justify-start gap-2 font-heading text-2xl font-bold mb-6">
-              <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg transform rotate-3">
-                <span className="text-primary text-lg font-black">Z</span>
+              <div className="w-10 h-10 bg-white dark:bg-primary rounded-xl flex items-center justify-center shadow-lg transform rotate-3 border border-border/10">
+                <span className="text-primary dark:text-white text-lg font-black italic">Z</span>
               </div>
-              <span className="tracking-tight">Zech Soft</span>
+              <span className="tracking-tight text-primary-foreground dark:text-foreground">Zech Soft</span>
             </Link>
-            <p className="text-sm text-primary-foreground/70 leading-relaxed mb-8 max-w-xs mx-auto md:mx-0">
+            <p className="text-sm text-primary-foreground/70 dark:text-muted-foreground leading-relaxed mb-8 max-w-xs mx-auto md:mx-0">
               Your trusted partner for high-quality digital solutions that transform businesses and drive growth.
             </p>
             <div className="flex items-center justify-center md:justify-start gap-4">
@@ -22,7 +22,7 @@ const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all duration-300"
+                  className="w-10 h-10 rounded-full border border-white/10 dark:border-border flex items-center justify-center hover:bg-white dark:hover:bg-primary hover:text-primary dark:hover:text-white transition-all duration-300"
                 >
                   <Icon className="w-4 h-4" />
                 </a>
@@ -33,7 +33,7 @@ const Footer = () => {
           {/* Links */}
           <div>
             <h4 className="font-heading font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/60">
+            <ul className="space-y-2 text-sm text-primary-foreground/60 dark:text-muted-foreground">
               {[
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/about-us" },
@@ -44,7 +44,7 @@ const Footer = () => {
                 { name: "Contact", path: "/contact" },
               ].map((l) => (
                 <li key={l.name}>
-                  <Link to={l.path} className="hover:text-primary-foreground transition-colors">
+                  <Link to={l.path} className="hover:text-primary-foreground dark:hover:text-foreground transition-colors">
                     {l.name}
                   </Link>
                 </li>
@@ -55,7 +55,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="font-heading font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/60">
+            <ul className="space-y-2 text-sm text-primary-foreground/60 dark:text-muted-foreground">
               {["Website Development", "Custom Software Solutions", "Digital Marketing", "IT Support"].map((s) => (
                 <li key={s}><span>{s}</span></li>
               ))}
@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Contact */}
           <div className="text-center md:text-left">
             <h4 className="font-heading font-bold text-lg mb-6">Contact Us</h4>
-            <ul className="space-y-4 text-sm text-primary-foreground/70">
+            <ul className="space-y-4 text-sm text-primary-foreground/70 dark:text-muted-foreground">
               <li className="flex items-center justify-center md:justify-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
                   <Phone className="w-4 h-4 text-accent" />
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/40">
+        <div className="border-t border-primary-foreground/10 dark:border-border/50 pt-6 text-center text-xs text-primary-foreground/40 dark:text-muted-foreground/40">
           © 2025 Zech Soft. All rights reserved.
         </div>
       </div>

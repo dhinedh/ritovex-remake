@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 lg:py-28 relative overflow-hidden bg-primary text-primary-foreground">
+    <section className="py-20 lg:py-28 relative overflow-hidden bg-primary dark:bg-secondary/20 text-primary-foreground dark:text-foreground">
       <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}

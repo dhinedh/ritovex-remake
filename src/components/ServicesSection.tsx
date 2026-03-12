@@ -37,17 +37,17 @@ const ServicesSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="services" className="py-20 lg:py-28 bg-primary text-primary-foreground overflow-hidden">
+    <section id="services" className="py-20 lg:py-28 bg-primary dark:bg-secondary/20 text-primary-foreground dark:text-foreground overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="inline-block border border-primary-foreground/20 rounded-full px-4 py-1.5 text-xs font-medium text-primary-foreground/60 mb-4">
+          <span className="inline-block border border-primary-foreground/20 dark:border-border rounded-full px-4 py-1.5 text-xs font-medium text-primary-foreground/60 dark:text-muted-foreground mb-4">
             Services
           </span>
-          <h2 className="font-heading text-3xl lg:text-4xl font-bold italic">
+          <h2 className="font-heading text-3xl lg:text-4xl font-bold italic text-primary-foreground dark:text-foreground">
             Our Services
           </h2>
-          <p className="text-primary-foreground/60 mt-4 max-w-lg mx-auto text-sm">
+          <p className="text-primary-foreground/60 dark:text-muted-foreground mt-4 max-w-lg mx-auto text-sm">
             We provide customized solutions (not one-size-fits-all) focused on real business results.
           </p>
         </div>
@@ -57,7 +57,7 @@ const ServicesSection = () => {
           {services.map((service, i) => (
             <div
               key={i}
-              className="border-b border-primary-foreground/10 relative group"
+              className="border-b border-primary-foreground/10 dark:border-border relative group"
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
@@ -66,14 +66,14 @@ const ServicesSection = () => {
               >
                 <div className="flex items-baseline gap-4 lg:gap-8">
                   <span
-                    className={`text-sm font-heading font-medium transition-colors duration-300 ${hoveredIndex === i ? "text-accent" : "text-primary-foreground/40"
+                    className={`text-sm font-heading font-medium transition-colors duration-300 ${hoveredIndex === i ? "text-accent" : "text-primary-foreground/40 dark:text-muted-foreground/60"
                       }`}
                   >
                     {service.num}
                   </span>
                   <div className="flex flex-col gap-2">
                     <h3
-                      className={`font-heading text-3xl sm:text-4xl lg:text-5xl font-bold transition-all duration-300 ${hoveredIndex === i ? "text-primary-foreground translate-x-2" : "text-primary-foreground/80"
+                      className={`font-heading text-3xl sm:text-4xl lg:text-5xl font-bold transition-all duration-300 ${hoveredIndex === i ? "text-primary-foreground dark:text-foreground translate-x-2" : "text-primary-foreground/80 dark:text-foreground/70"
                         }`}
                     >
                       {service.title}
@@ -85,7 +85,7 @@ const ServicesSection = () => {
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
-                          className="text-sm text-primary-foreground/50 max-w-2xl mt-2 overflow-hidden"
+                          className="text-sm text-primary-foreground/50 dark:text-muted-foreground max-w-2xl mt-2 overflow-hidden"
                         >
                           {service.desc}
                         </motion.p>
@@ -96,8 +96,8 @@ const ServicesSection = () => {
                 <motion.div
                   animate={{ rotate: hoveredIndex === i ? 45 : 0 }}
                   className={`w-12 h-12 lg:w-16 lg:h-16 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${hoveredIndex === i
-                    ? "border-accent bg-accent text-primary"
-                    : "border-primary-foreground/20 text-primary-foreground/60"
+                    ? "border-accent bg-accent text-primary dark:text-white"
+                    : "border-primary-foreground/20 dark:border-border text-primary-foreground/60 dark:text-foreground/40"
                     }`}
                 >
                   <ArrowUpRight className="w-5 h-5 lg:w-6 lg:h-6" />
