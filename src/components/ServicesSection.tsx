@@ -79,9 +79,9 @@ const ServicesSection = () => {
                       {service.title}
                     </h3>
                     <AnimatePresence>
-                      {hoveredIndex === i && (
+                      {(hoveredIndex === i || window.innerWidth < 1024) && (
                         <motion.p
-                          initial={{ height: 0, opacity: 0 }}
+                          initial={window.innerWidth < 1024 ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}

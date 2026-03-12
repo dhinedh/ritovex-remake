@@ -21,7 +21,7 @@ const ProcessSection = () => {
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24 items-start">
 
           {/* Left Column: Title, Action, and Image */}
-          <div className="lg:col-span-5 flex flex-col items-start sticky top-28 self-start">
+          <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-28 self-start">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}

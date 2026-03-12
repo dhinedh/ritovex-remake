@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { Play, ArrowRight } from "lucide-react";
 import heroImage from "@/assets/home-hero-zechsoft.png";
 
 const HeroSection = () => {
@@ -17,22 +17,23 @@ const HeroSection = () => {
             <span className="inline-block border border-border rounded-full px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
               Innovative Digital Solutions
             </span>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] mb-6">
-              Empowering Businesses with Smart Technology
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 tracking-tight">
+              Empowering Businesses with <span className="text-primary italic">Smart</span> Technology
             </h1>
-            <p className="text-muted-foreground text-base lg:text-lg max-w-md mb-8 leading-relaxed">
+            <p className="text-muted-foreground text-base lg:text-xl max-w-md mb-8 leading-relaxed">
               Zech Soft provides innovative and reliable digital solutions that improve efficiency, increase visibility, and drive growth.
             </p>
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-7 py-3.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95"
               >
                 Get Started
+                <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
-              <button className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-muted-foreground transition-colors">
-                <span className="w-10 h-10 rounded-full border-2 border-foreground flex items-center justify-center">
-                  <Play className="w-3.5 h-3.5 fill-foreground" />
+              <button className="inline-flex items-center justify-center gap-3 text-sm font-bold text-foreground hover:text-primary transition-colors py-4">
+                <span className="w-12 h-12 rounded-full border-2 border-border flex items-center justify-center group-hover:border-primary transition-colors">
+                  <Play className="w-4 h-4 fill-foreground group-hover:fill-primary" />
                 </span>
                 Watch Demo
               </button>

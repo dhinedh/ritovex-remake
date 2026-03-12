@@ -52,6 +52,7 @@ const BlogSection = () => {
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileTap={{ scale: 0.98 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="group cursor-pointer bg-card rounded-3xl p-4 hover:shadow-xl transition-all duration-300 border border-border/50"

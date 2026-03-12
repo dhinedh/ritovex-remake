@@ -48,17 +48,18 @@ const PortfolioSection = () => {
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileTap={{ scale: 0.98 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`${project.color} rounded-2xl p-8 lg:p-10 group cursor-pointer hover:shadow-lg transition-shadow`}
+              className={`${project.color} rounded-3xl p-8 lg:p-10 group cursor-pointer hover:shadow-xl hover:shadow-primary/5 transition-all border border-transparent hover:border-primary/10`}
             >
-              <span className="text-xs font-medium text-muted-foreground bg-background/80 rounded-full px-3 py-1">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground bg-background/80 backdrop-blur-md rounded-full px-3 py-1 mb-6 inline-block">
                 {project.category}
               </span>
-              <h3 className="font-heading text-xl lg:text-2xl font-bold text-foreground mt-4 mb-2">
+              <h3 className="font-heading text-2xl lg:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                 {project.title}
               </h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                 {project.desc}
               </p>
             </motion.div>

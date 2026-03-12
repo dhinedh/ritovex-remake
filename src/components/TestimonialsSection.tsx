@@ -68,9 +68,13 @@ const TestimonialsSection = () => {
         </div>
       </div>
 
-      {/* Rotating Marquee */}
+      {/* Rotating Marquee with Edge Fades */}
       <div className="relative w-full">
-        <div className="flex animate-marquee-slow whitespace-normal hover:[animation-play-state:paused] w-max">
+        {/* Edge Fades */}
+        <div className="absolute inset-y-0 left-0 w-20 md:w-40 bg-gradient-to-r from-background to-transparent z-20 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-20 md:w-40 bg-gradient-to-l from-background to-transparent z-20 pointer-events-none" />
+        
+        <div className="flex animate-marquee-slow whitespace-normal hover:[animation-play-state:paused] w-max py-8">
           {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
             <div
               key={i}
