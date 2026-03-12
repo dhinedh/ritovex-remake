@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
@@ -17,13 +18,13 @@ const CTASection = () => {
           <h2 className="font-heading text-4xl lg:text-6xl font-bold mb-8">
             Let's Start Talk
           </h2>
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-7 py-3.5 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
           >
-            Connect With Us
+            Contact Us
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

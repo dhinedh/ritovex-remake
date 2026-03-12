@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "SmartCity Traffic Solution",
-    desc: "AI-powered sensors reduced downtown traffic congestion by 35% weekly.",
+    title: "School Management System",
+    desc: "Streamlining school administration with automated student tracking and fee management.",
     category: "Web Development",
     color: "bg-accent/10",
   },
@@ -14,14 +14,14 @@ const projects = [
     color: "bg-primary/5",
   },
   {
-    title: "MedTrack Healthcare App",
-    desc: "Doctor-patient communication with secure messaging and appointment tracking.",
+    title: "Hospital Management System",
+    desc: "End-to-end hospital automation including OPD, IPD, billing, and pharmacy management.",
     category: "Web Development",
     color: "bg-secondary",
   },
   {
-    title: "EduPlay Learning Portal",
-    desc: "Interactive STEM games increased student engagement by 4X in classrooms.",
+    title: "Manufacturing Corporate Portfolios",
+    desc: "Premium corporate web solutions for global manufacturing firms, enhancing digital presence and lead generation.",
     category: "Web Development",
     color: "bg-accent/10",
   },

@@ -1,28 +1,35 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import serviceImage from "@/assets/service-web-design.jpg";
+import webDesignImage from "@/assets/service-web-design.jpg";
+import softwareSolutionsImage from "@/assets/service-software-solutions.png";
+import digitalMarketingImage from "@/assets/service-digital-marketing.png";
+import itSupportImage from "@/assets/service-it-support.png";
 
 const services = [
   {
     num: "01",
-    title: "Web Design",
+    title: "Website Development",
     desc: "Focuses on the aesthetic and user experience of a website, creating visually appealing and intuitive layouts. It involves aspects like graphic design, typography, and color schemes to enhance user engagement.",
+    image: webDesignImage,
   },
   {
     num: "02",
-    title: "Web Development",
+    title: "Custom Software Solutions",
     desc: "Involves the coding and programming that makes a website functional and interactive, including front-end development and back-end development with server, database, and application logic.",
+    image: softwareSolutionsImage,
   },
   {
     num: "03",
-    title: "Branding",
+    title: "Digital Marketing Services",
     desc: "Creating a unique identity for a company or product, encompassing its name, logo, messaging, and overall market perception to establish recognition and emotional connection.",
+    image: digitalMarketingImage,
   },
   {
     num: "04",
-    title: "Product Design",
-    desc: "The entire process of creating a new product, from conceptualization and research to prototyping and final execution, focusing on solving user problems and enhancing user experience.",
+    title: "IT Support & Maintenance",
+    desc: "Ensuring your digital systems run smoothly with professional support and maintenance.",
+    image: itSupportImage,
   },
 ];
 
@@ -30,7 +37,7 @@ const ServicesSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="services" className="py-20 lg:py-28 bg-primary text-primary-foreground">
+    <section id="services" className="py-20 lg:py-28 bg-primary text-primary-foreground overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -38,10 +45,10 @@ const ServicesSection = () => {
             Services
           </span>
           <h2 className="font-heading text-3xl lg:text-4xl font-bold italic">
-            Your Needs, Our Expertise
+            Our Services
           </h2>
           <p className="text-primary-foreground/60 mt-4 max-w-lg mx-auto text-sm">
-            Your Vision, Our Expertise — Together, we bring ideas to life with tailored solutions that deliver real results. Let's build something amazing.
+            We provide customized solutions (not one-size-fits-all) focused on real business results.
           </p>
         </div>
 
@@ -50,63 +57,69 @@ const ServicesSection = () => {
           {services.map((service, i) => (
             <div
               key={i}
-              className="border-b border-primary-foreground/10 relative"
+              className="border-b border-primary-foreground/10 relative group"
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <motion.div
-                className="flex items-center justify-between py-8 lg:py-10 cursor-pointer group"
-                whileHover={{ x: 8 }}
-                transition={{ duration: 0.3 }}
+              <div
+                className="flex items-center justify-between py-8 lg:py-12 cursor-pointer relative z-10"
               >
-                <div className="flex items-baseline gap-4 lg:gap-6">
+                <div className="flex items-baseline gap-4 lg:gap-8">
                   <span
-                    className={`text-sm font-heading font-medium transition-colors duration-300 ${
-                      hoveredIndex === i ? "text-accent" : "text-primary-foreground/40"
-                    }`}
+                    className={`text-sm font-heading font-medium transition-colors duration-300 ${hoveredIndex === i ? "text-accent" : "text-primary-foreground/40"
+                      }`}
                   >
                     {service.num}
                   </span>
-                  <h3
-                    className={`font-heading text-2xl sm:text-3xl lg:text-4xl font-bold transition-colors duration-300 ${
-                      hoveredIndex === i ? "text-accent" : "text-primary-foreground"
+                  <div className="flex flex-col gap-2">
+                    <h3
+                      className={`font-heading text-3xl sm:text-4xl lg:text-5xl font-bold transition-all duration-300 ${hoveredIndex === i ? "text-primary-foreground translate-x-2" : "text-primary-foreground/80"
+                        }`}
+                    >
+                      {service.title}
+                    </h3>
+                    <AnimatePresence>
+                      {hoveredIndex === i && (
+                        <motion.p
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="text-sm text-primary-foreground/50 max-w-2xl mt-2 overflow-hidden"
+                        >
+                          {service.desc}
+                        </motion.p>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                </div>
+                <motion.div
+                  animate={{ rotate: hoveredIndex === i ? 45 : 0 }}
+                  className={`w-12 h-12 lg:w-16 lg:h-16 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${hoveredIndex === i
+                    ? "border-accent bg-accent text-primary"
+                    : "border-primary-foreground/20 text-primary-foreground/60"
                     }`}
-                  >
-                    {service.title}
-                  </h3>
-                </div>
-                <div
-                  className={`w-10 h-10 lg:w-12 lg:h-12 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-                    hoveredIndex === i
-                      ? "border-accent bg-accent text-primary"
-                      : "border-primary-foreground/20 text-primary-foreground/60"
-                  }`}
                 >
-                  <ArrowUpRight className="w-4 h-4 lg:w-5 lg:h-5" />
-                </div>
-              </motion.div>
+                  <ArrowUpRight className="w-5 h-5 lg:w-6 lg:h-6" />
+                </motion.div>
+              </div>
 
-              {/* Hover reveal: description + image */}
+              {/* Hover Floating Image - 45 Degree Entrance */}
               <AnimatePresence>
                 {hoveredIndex === i && (
                   <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: "auto", opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.35, ease: "easeInOut" }}
-                    className="overflow-hidden"
+                    initial={{ opacity: 0, scale: 0.5, rotate: 45, x: 20 }}
+                    animate={{ opacity: 1, scale: 1, rotate: 12, x: 0 }}
+                    exit={{ opacity: 0, scale: 0.8, rotate: 45, x: 20 }}
+                    transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                    className="absolute right-28 top-[40%] -translate-y-1/2 z-20 pointer-events-none hidden lg:block"
                   >
-                    <div className="flex flex-col lg:flex-row gap-6 pb-8">
-                      <p className="text-sm text-primary-foreground/50 max-w-xl leading-relaxed">
-                        {service.desc}
-                      </p>
-                      <div className="lg:absolute lg:right-20 lg:top-4 w-48 h-48 lg:w-64 lg:h-56 rounded-xl overflow-hidden shadow-2xl flex-shrink-0">
-                        <img
-                          src={serviceImage}
-                          alt={service.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
+                    <div className="w-[300px] h-[200px] rounded-2xl overflow-hidden shadow-2xl border-4 border-background/10">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </motion.div>
                 )}
