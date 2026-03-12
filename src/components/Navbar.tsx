@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail, Instagram, Twitter, Facebook, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -55,6 +56,7 @@ const Navbar = () => {
               <p className="font-bold text-foreground">+91 93424 00879</p>
             </div>
           </div>
+          <ThemeToggle />
         </div>
 
         {/* Mobile toggle */}
@@ -77,12 +79,15 @@ const Navbar = () => {
             className="fixed inset-0 z-50 lg:hidden flex flex-col bg-background/95 backdrop-blur-xl"
           >
             <div className="flex items-center justify-between py-4 px-4 border-b border-border/50">
-              <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 font-heading text-xl font-bold text-foreground">
-                <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground text-sm font-bold">Z</span>
-                </div>
-                Zech Soft
-              </Link>
+              <div className="flex items-center gap-4">
+                <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 font-heading text-xl font-bold text-foreground">
+                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                    <span className="text-primary-foreground text-sm font-bold">Z</span>
+                  </div>
+                  Zech Soft
+                </Link>
+                <ThemeToggle />
+              </div>
               <button
                 className="p-2 text-foreground"
                 onClick={() => setMobileOpen(false)}

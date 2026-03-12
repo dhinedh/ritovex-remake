@@ -78,7 +78,7 @@ const TestimonialsSection = () => {
           {[...testimonials, ...testimonials, ...testimonials].map((t, i) => (
             <div
               key={i}
-              className="w-[85vw] md:w-[450px] lg:w-[500px] flex-shrink-0 mx-4 md:mx-6 bg-secondary/30 rounded-[2.5rem] p-10 lg:p-12 flex flex-col border border-border/30 hover:shadow-xl hover:border-border/60 transition-all duration-300"
+              className="w-[85vw] md:w-[450px] lg:w-[500px] flex-shrink-0 mx-4 md:mx-6 bg-secondary/30 dark:bg-secondary/10 rounded-[2.5rem] p-10 lg:p-12 flex flex-col border border-border/30 hover:shadow-xl hover:border-border/60 transition-all duration-300"
             >
               {/* Stars */}
               <div className="flex gap-1.5 mb-8">

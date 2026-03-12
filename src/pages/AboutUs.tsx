@@ -26,14 +26,14 @@ const AboutUs = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-[#fafafc] text-foreground">
+            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-secondary/20 text-foreground">
                 <div className="absolute inset-0">
                     {/* Vibrant Startup Mesh */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(139,92,246,0.15),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(249,115,22,0.12),transparent_50%),radial-gradient(circle_at_50%_50%,rgba(6,182,212,0.1),transparent_50%)]" />
 
                     {/* Grid Pattern */}
-                    <div className="absolute inset-0 opacity-[0.08]"
-                        style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)', backgroundSize: '50px 50px' }}
+                    <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
+                        style={{ backgroundImage: 'linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)', backgroundSize: '50px 50px' }}
                     />
 
                     {/* Launchpad Velocity */}
@@ -178,7 +178,7 @@ const AboutUs = () => {
                                     className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
-                            <div className="absolute -bottom-8 -right-8 bg-white p-8 rounded-2xl shadow-xl hidden md:block">
+                            <div className="absolute -bottom-8 -right-8 bg-card p-8 rounded-2xl shadow-xl border border-border hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                                         <Award className="w-6 h-6 text-white" />
