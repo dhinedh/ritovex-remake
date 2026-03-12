@@ -21,7 +21,7 @@ const CTASection = () => {
           </h2>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-full text-base font-bold hover:bg-accent hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-xl"
+            className="inline-flex items-center gap-3 bg-accent text-white px-10 py-5 rounded-full text-base font-bold hover:bg-white hover:text-primary transition-all transform hover:scale-105 active:scale-95 shadow-xl"
           >
             Get in Touch
             <ArrowRight className="w-5 h-5" />

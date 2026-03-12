@@ -181,7 +181,7 @@ const AboutUs = () => {
                             <div className="absolute -bottom-8 -right-8 bg-card p-8 rounded-2xl shadow-xl border border-border hidden md:block">
                                 <div className="flex items-center gap-4">
                                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                                        <Award className="w-6 h-6 text-white" />
+                                        <Award className="w-6 h-6 text-primary-foreground" />
                                     </div>
                                     <div>
                                         <p className="text-3xl font-bold text-foreground">5+</p>

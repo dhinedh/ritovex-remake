@@ -32,7 +32,7 @@ const Careers = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-[#fafafc]">
+            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-secondary/10 text-foreground">
                 {/* Image Background Layer */}
                 <div className="absolute inset-0 z-0">
                     <img
@@ -55,7 +55,7 @@ const Careers = () => {
                             visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
                         }}
                     >
-                        <div className="inline-flex items-center gap-2 border border-black/5 rounded-full px-4 py-1.5 bg-white/50 backdrop-blur-md mb-6 shadow-sm">
+                        <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 mb-6 shadow-sm">
                             <span className="w-2 h-2 rounded-full bg-cyan-500 animate-pulse" />
                             <span className="text-xs font-bold text-foreground/80 uppercase tracking-widest">
                                 Work With Us
@@ -120,13 +120,13 @@ const Careers = () => {
             </section>
 
             {/* Job Listings */}
-            <section className="py-20 lg:py-32 bg-[#fafafc]">
+            <section className="py-20 lg:py-32 bg-secondary/10">
                 <div className="container mx-auto px-4 lg:px-8">
                     <div className="max-w-4xl mx-auto">
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
                             <h2 className="font-heading text-4xl font-bold">Open Positions</h2>
                             <div className="flex gap-4">
-                                <span className="px-4 py-2 bg-white border border-border rounded-full text-sm font-medium">All Jobs</span>
+                                <span className="px-4 py-2 bg-background border border-border rounded-full text-sm font-medium">All Jobs</span>
                                 <span className="px-4 py-2 bg-primary/10 text-primary border border-primary/20 rounded-full text-sm font-medium">Remote Only</span>
                             </div>
                         </div>
@@ -136,7 +136,7 @@ const Careers = () => {
                                 <motion.div
                                     key={i}
                                     whileHover={{ x: 10 }}
-                                    className="p-8 rounded-[2rem] bg-white border border-border/50 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6 group"
+                                    className="p-8 rounded-[2rem] bg-background border border-border/50 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all flex flex-col md:flex-row md:items-center justify-between gap-6 group"
                                 >
                                     <div>
                                         <div className="flex flex-wrap gap-2 mb-3">
@@ -159,7 +159,7 @@ const Careers = () => {
                             <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
                                 If you're talented and passionate but don't see a perfect role, send us your resume and we'll keep you in mind for future openings.
                             </p>
-                            <button className="px-8 py-4 bg-white text-primary rounded-full font-bold hover:bg-opacity-90 transition-all">
+                            <button className="px-8 py-4 bg-background text-primary-foreground dark:text-foreground rounded-full font-bold hover:bg-opacity-90 transition-all">
                                 Send Your CV
                             </button>
                         </div>

@@ -176,11 +176,10 @@ const Services = () => {
 
             <section className="py-20 bg-secondary/30">
                 <div className="container mx-auto px-4 lg:px-8 text-center">
-                    <h2 className="font-heading text-3xl lg:text-5xl font-bold mb-8">Ready to transform your business?</h2>
                     <motion.button
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        className="bg-primary text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-primary/20"
+                        className="bg-primary text-primary-foreground px-10 py-4 rounded-full font-bold shadow-lg shadow-primary/20"
                     >
                         Book a Free Consultation
                     </motion.button>

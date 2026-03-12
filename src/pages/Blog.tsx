@@ -193,7 +193,7 @@ const Blog = () => {
                                 </h4>
                                 <div className="flex flex-wrap gap-2">
                                     {["Technology", "Design", "Development", "Business", "AI", "Mobile", "Security"].map((cat) => (
-                                        <button key={cat} className="px-4 py-2 bg-background border border-border rounded-lg text-sm font-semibold hover:bg-primary hover:text-white hover:border-primary transition-all">
+                                        <button key={cat} className="px-4 py-2 bg-background border border-border rounded-lg text-sm font-semibold hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all">
                                             {cat}
                                         </button>
                                     ))}
@@ -211,7 +211,7 @@ const Blog = () => {
                                         placeholder="Email Address"
                                         className="w-full bg-background/10 border border-background/20 rounded-xl py-3 px-4 text-background placeholder:text-background/40 outline-none focus:border-primary"
                                     />
-                                    <button className="w-full bg-primary text-white font-bold py-3 rounded-xl hover:scale-[1.02] transition-transform">
+                                    <button className="w-full bg-primary text-primary-foreground font-bold py-3 rounded-xl hover:scale-[1.02] transition-transform">
                                         Subscribe Now
                                     </button>
                                 </div>

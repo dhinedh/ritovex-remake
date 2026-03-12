@@ -182,10 +182,10 @@ const Projects = () => {
                                         {project.category}
                                     </div>
                                     <div className="flex gap-4">
-                                        <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-border hover:bg-primary hover:text-white transition-all">
+                                        <button className="w-12 h-12 rounded-full bg-background dark:bg-card flex items-center justify-center border border-border hover:bg-primary hover:text-primary-foreground transition-all">
                                             <ExternalLink className="w-5 h-5" />
                                         </button>
-                                        <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center border border-border hover:bg-primary hover:text-white transition-all">
+                                        <button className="w-12 h-12 rounded-full bg-background dark:bg-card flex items-center justify-center border border-border hover:bg-primary hover:text-primary-foreground transition-all">
                                             <Github className="w-5 h-5" />
                                         </button>
                                     </div>
@@ -200,7 +200,7 @@ const Projects = () => {
 
                                 <div className="flex flex-wrap gap-3 mb-10">
                                     {project.tags.map((tag, idx) => (
-                                        <span key={idx} className="bg-white/50 px-4 py-1.5 rounded-lg text-xs font-bold text-foreground/70 border border-white">
+                                        <span key={idx} className="bg-secondary/50 dark:bg-secondary/20 px-4 py-1.5 rounded-lg text-xs font-bold text-foreground/70 border border-border/10">
                                             {tag}
                                         </span>
                                     ))}
