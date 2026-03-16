@@ -7,7 +7,7 @@ import aboutImage from "@/assets/about-image.jpg";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30, filter: "blur(4px)", scale: 0.98 },
-    visible: { opacity: 1, y: 0, filter: "blur(0px)", scale: 1, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: { opacity: 1, y: 0, filter: "blur(0px)", scale: 1, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
 };
 
 const staggerContainer = {
