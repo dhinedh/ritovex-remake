@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail, Instagram, Twitter, Facebook, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
+import { Logo } from "./Logo";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -23,11 +24,8 @@ const Navbar = () => {
       <div className="bg-background/80 backdrop-blur-md border-b border-border w-full">
         <div className="container mx-auto flex items-center justify-between py-4 px-4 lg:px-8">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 font-heading text-xl font-bold text-foreground">
-          <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground text-sm font-bold">Z</span>
-          </div>
-          Zech Soft
+        <Link to="/" className="flex items-center">
+          <Logo size="md" />
         </Link>
 
         {/* Desktop Nav */}
@@ -94,11 +92,8 @@ const Navbar = () => {
           >
             <div className="flex items-center justify-between py-4 px-4 border-b border-border/10">
               <div className="flex items-center gap-4">
-                <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-2 font-heading text-xl font-bold text-foreground">
-                  <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                    <span className="text-primary-foreground text-sm font-bold">Z</span>
-                  </div>
-                  Zech Soft
+                <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center">
+                  <Logo size="md" />
                 </Link>
                 <div className="scale-90">
                   <ThemeToggle />

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Instagram, Twitter, Facebook, Linkedin } from "lucide-react";
+import { Logo } from "./Logo";
 
 const Footer = () => {
   return (
@@ -8,11 +9,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1 text-center md:text-left">
-            <Link to="/" className="flex items-center justify-center md:justify-start gap-2 font-heading text-2xl font-bold mb-6">
-              <div className="w-10 h-10 bg-white dark:bg-primary rounded-xl flex items-center justify-center shadow-lg transform rotate-3 border border-border/10">
-                <span className="text-primary dark:text-white text-lg font-black italic">Z</span>
-              </div>
-              <span className="tracking-tight text-primary-foreground dark:text-foreground">Zech Soft</span>
+            <Link to="/" className="flex items-center justify-center md:justify-start mb-6">
+              <Logo size="lg" variant="dark" />
             </Link>
             <p className="text-sm text-primary-foreground/70 dark:text-muted-foreground leading-relaxed mb-8 max-w-xs mx-auto md:mx-0">
               Your trusted partner for high-quality digital solutions that transform businesses and drive growth.
