@@ -74,7 +74,7 @@ const Footer = () => {
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">
                   <Mail className="w-4 h-4 text-accent" />
                 </div>
-                hello@zechsoft.com
+                info@zechsoft.tech
               </li>
               <li className="flex items-center justify-center md:justify-start gap-3">
                 <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center">

@@ -2,33 +2,61 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import webDesignImage from "@/assets/service-web-design.jpg";
-import softwareSolutionsImage from "@/assets/service-software-solutions.png";
+import ecommerceImage from "@/assets/service-ecommerce.png";
+import mobileAppImage from "@/assets/service-mobile-app.png";
+import automationImage from "@/assets/service-automation.png";
+import aiSolutionsImage from "@/assets/service-ai-solutions.png";
 import digitalMarketingImage from "@/assets/service-digital-marketing.png";
+import securityCyberImage from "@/assets/service-security-cyber.png";
 import itSupportImage from "@/assets/service-it-support.png";
 
 const services = [
   {
     num: "01",
     title: "Website Development",
-    desc: "Focuses on the aesthetic and user experience of a website, creating visually appealing and intuitive layouts. It involves aspects like graphic design, typography, and color schemes to enhance user engagement.",
+    desc: "Crafting digital experiences with precision. We build high-performance, responsive websites that turn visitors into customers through modern architecture and stunning UI.",
     image: webDesignImage,
   },
   {
     num: "02",
-    title: "Custom Software Solutions",
-    desc: "Involves the coding and programming that makes a website functional and interactive, including front-end development and back-end development with server, database, and application logic.",
-    image: softwareSolutionsImage,
+    title: "E-commerce Development",
+    desc: "Scale your sales with robust online storefronts. From Shopify and WooCommerce to custom marketplaces, we build conversion-optimized e-commerce platforms.",
+    image: ecommerceImage,
   },
   {
     num: "03",
-    title: "Digital Marketing Services",
-    desc: "Creating a unique identity for a company or product, encompassing its name, logo, messaging, and overall market perception to establish recognition and emotional connection.",
-    image: digitalMarketingImage,
+    title: "Mobile App Development",
+    desc: "Seamless user experiences on the go. We develop high-quality native and cross-platform (Flutter/iOS/Android) mobile apps tailored to your business needs.",
+    image: mobileAppImage,
   },
   {
     num: "04",
-    title: "IT Support & Maintenance",
-    desc: "Ensuring your digital systems run smoothly with professional support and maintenance.",
+    title: "Business Automation",
+    desc: "Work smarter, not harder. Our automation solutions streamline your workflows, from CRM integrations to WhatsApp/Email automation, saving you time and money.",
+    image: automationImage,
+  },
+  {
+    num: "05",
+    title: "AI Solutions",
+    desc: "Future-proof your business with Intelligence. We implement cutting-edge AI chatbots, customer support systems, and predictive analytics to give you a competitive edge.",
+    image: aiSolutionsImage,
+  },
+  {
+    num: "06",
+    title: "Digital Marketing",
+    desc: "Grow your online presence and reach your target audience. Our data-driven strategies focus on SEO, lead generation, and social media growth for maximum ROI.",
+    image: digitalMarketingImage,
+  },
+  {
+    num: "07",
+    title: "Cyber Security",
+    desc: "Your data's safety is our priority. We provide professional security audits, vulnerability testing, and ongoing protection to keep your digital assets secure.",
+    image: securityCyberImage,
+  },
+  {
+    num: "08",
+    title: "IT Consulting",
+    desc: "Strategic technology planning for long-term success. We guide your digital transformation journey with expert advice on technology stacks and process optimization.",
     image: itSupportImage,
   },
 ];

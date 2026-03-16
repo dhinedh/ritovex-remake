@@ -166,11 +166,11 @@ const Navbar = () => {
                       </div>
                       +91 93424 00879
                     </a>
-                    <a href="mailto:info@zechsoft.com" className="flex items-center gap-3 text-foreground/80 font-medium">
+                    <a href="mailto:info@zechsoft.tech" className="flex items-center gap-3 text-foreground/80 font-medium">
                       <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center border border-primary/10">
                         <Mail className="w-4 h-4 text-primary" />
                       </div>
-                      info@zechsoft.com
+                      info@zechsoft.tech
                     </a>
                   </div>
                 </div>

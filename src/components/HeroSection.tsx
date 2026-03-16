@@ -18,10 +18,10 @@ const HeroSection = () => {
               Innovative Digital Solutions
             </span>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 tracking-tight">
-              Empowering Businesses with <span className="text-primary italic">Smart</span> Technology
+              Automate Your <span className="text-primary italic">Business</span> With Zechsoft
             </h1>
             <p className="text-muted-foreground text-base lg:text-xl max-w-md mb-8 leading-relaxed">
-              Zech Soft provides innovative and reliable digital solutions that improve efficiency, increase visibility, and drive growth.
+              We build custom software, mobile apps, and AI solutions that streamline operations, boost productivity, and accelerate growth.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link

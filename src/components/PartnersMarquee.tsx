@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const partners = [
-  "MASCO", "MOODY'S", "abbvie", "align",
-  "BUNGE", "DISCOVER", "ESSEX", "HOLOGIC"
+  "Mansara Foods Pvt Ltd", "Refranox Insulation Private Limited", "a3 Express Cargo", "Global india corporation" ,"Vignesh Catering servies",
+  , "Ezil designs",
 ];
 
 const PartnersMarquee = () => {

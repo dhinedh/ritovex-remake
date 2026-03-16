@@ -83,7 +83,7 @@ const Contact = () => {
                                         {
                                             icon: <Mail className="w-6 h-6" />,
                                             title: "Email Us",
-                                            info: "hello@zechsoft.com",
+                                            info: "info@zechsoft.tech",
                                             desc: "We usually respond within 24 hours."
                                         },
                                         {

@@ -178,17 +178,7 @@ const AboutUs = () => {
                                     className="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
                                 />
                             </div>
-                            <div className="absolute -bottom-8 -right-8 bg-card p-8 rounded-2xl shadow-xl border border-border hidden md:block">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                                        <Award className="w-6 h-6 text-primary-foreground" />
-                                    </div>
-                                    <div>
-                                        <p className="text-3xl font-bold text-foreground">5+</p>
-                                        <p className="text-sm text-muted-foreground uppercase tracking-wider font-semibold">Years Experience</p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </motion.div>
 
                         <motion.div
