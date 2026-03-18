@@ -32,11 +32,11 @@ const Careers = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-secondary/10 text-foreground">
+            <section className="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-secondary/10 text-foreground">
                 {/* Image Background Layer */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={careersHeroBg}
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2400&auto=format&fit=crop"
                         alt="Careers Hero Background"
                         className="w-full h-full object-cover"
                     />

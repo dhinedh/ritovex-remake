@@ -16,11 +16,11 @@ const Contact = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-[#fafafc]">
+            <section className="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-[#fafafc]">
                 {/* Image Background Layer */}
                 <div className="absolute inset-0 z-0">
                     <img
-                        src={contactHeroBg}
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2400&auto=format&fit=crop"
                         alt="Contact Hero Background"
                         className="w-full h-full object-cover"
                     />

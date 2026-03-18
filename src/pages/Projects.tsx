@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -26,7 +27,8 @@ const projects = [
         category: "EdTech",
         tags: ["React", "Node.js", "PostgreSQL", "Socket.io"],
         color: "bg-blue-500/10 border-blue-500/20",
-        textColor: "text-blue-500"
+        textColor: "text-blue-500",
+        path: "/school-erp"
     },
     {
         title: "ShopEasy E-Commerce",
@@ -34,7 +36,8 @@ const projects = [
         category: "E-Commerce",
         tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
         color: "bg-orange-500/10 border-orange-500/20",
-        textColor: "text-orange-500"
+        textColor: "text-orange-500",
+        path: "/shopeasy"
     },
     {
         title: "Hospital Management System",
@@ -42,7 +45,8 @@ const projects = [
         category: "Healthcare",
         tags: ["React Native", "Firebase", "WebRTC"],
         color: "bg-emerald-500/10 border-emerald-500/20",
-        textColor: "text-emerald-500"
+        textColor: "text-emerald-500",
+        path: "/hospital-hims"
     },
     {
         title: "Manufacturing Corporate Portfolios",
@@ -50,7 +54,8 @@ const projects = [
         category: "Corporate",
         tags: ["Next.js", "Tailwind CSS", "Framer Motion", "SEO"],
         color: "bg-purple-500/10 border-purple-500/20",
-        textColor: "text-purple-500"
+        textColor: "text-purple-500",
+        path: "/manufacturing"
     },
     {
         title: "Payroll & Manufacturing ERP",
@@ -58,7 +63,8 @@ const projects = [
         category: "ERP Solutions",
         tags: ["React", "Express", "MySQL", "Chart.js"],
         color: "bg-cyan-500/10 border-cyan-500/20",
-        textColor: "text-cyan-500"
+        textColor: "text-cyan-500",
+        path: "/payroll-erp"
     },
     {
         title: "All-in-One Billing Software",
@@ -66,7 +72,8 @@ const projects = [
         category: "SaaS",
         tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
         color: "bg-lime-500/10 border-lime-500/20",
-        textColor: "text-lime-500"
+        textColor: "text-lime-500",
+        path: "/billing-software"
     }
 ];
 
@@ -76,7 +83,7 @@ const Projects = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-background text-foreground">
+            <section className="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-background text-foreground">
                 {/* Background Shapes */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <motion.div
@@ -206,9 +213,12 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className="flex items-center gap-2 font-bold text-foreground group-hover:gap-4 transition-all cursor-pointer">
+                                <Link 
+                                    to={project.path}
+                                    className="inline-flex items-center gap-2 font-bold text-foreground group-hover:gap-4 transition-all cursor-pointer hover:text-primary"
+                                >
                                     View Case Study <ArrowRight className="w-5 h-5 text-primary" />
-                                </div>
+                                </Link>
                             </motion.div>
                         ))}
                     </div>

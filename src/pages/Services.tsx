@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ServiceMarquee from "@/components/ServiceMarquee";
 import { motion } from "framer-motion";
-import servicesHeroBg from "@/assets/services-hero-bg.png";
+import servicesHeroBg from "@/assets/services-hero-realistic.png";
 import {
     Code2,
     Globe,
@@ -179,7 +179,7 @@ const Services = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-white">
+            <section className="relative pt-36 pb-14 lg:pt-48 lg:pb-20 overflow-hidden bg-white">
                 {/* Image Background Layer */}
                 <div className="absolute inset-0 z-0">
                     <img
@@ -239,7 +239,7 @@ const Services = () => {
             </section>
 
             {/* Services Grid */}
-            <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
+            <section className="py-16 lg:py-24 bg-background relative overflow-hidden">
                 <div className="container mx-auto px-4 lg:px-8">
                     <motion.div
                         initial="hidden"
@@ -252,7 +252,7 @@ const Services = () => {
                             <motion.div
                                 key={i}
                                 variants={fadeInUp}
-                                className="group p-8 lg:p-10 rounded-[2.5rem] bg-secondary/10 hover:bg-white dark:hover:bg-secondary/40 border border-border/50 hover:border-primary/20 transition-all duration-500 hover:shadow-2xl relative overflow-hidden"
+                                className="group p-6 lg:p-8 rounded-[2.5rem] bg-secondary/10 hover:bg-white dark:hover:bg-secondary/40 border border-border/50 hover:border-primary/20 transition-all duration-500 hover:shadow-2xl relative overflow-hidden"
                             >
                                 {/* Background Glow */}
                                 <div className={`absolute top-0 right-0 w-32 h-32 ${category.color} opacity-0 group-hover:opacity-10 blur-[80px] transition-opacity duration-500`} />
@@ -280,7 +280,7 @@ const Services = () => {
             </section>
 
             {/* Special Service Section */}
-            <section className="py-20 lg:py-32 bg-[#0F0F0F] text-white relative overflow-hidden">
+            <section className="py-16 lg:py-24 bg-[#0F0F0F] text-white relative overflow-hidden">
                 {/* Decorative Elements */}
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px]" />
@@ -307,7 +307,7 @@ const Services = () => {
                                 whileInView={{ opacity: 1, scale: 1 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: i * 0.2 }}
-                                className={`relative p-10 lg:p-14 rounded-[3.5rem] bg-gradient-to-br ${service.color} overflow-hidden shadow-2xl group border border-white/10`}
+                                className={`relative p-8 lg:p-10 rounded-[3.5rem] bg-gradient-to-br ${service.color} overflow-hidden shadow-2xl group border border-white/10`}
                             >
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rotate-45 translate-x-32 -translate-y-32 transition-transform duration-700 group-hover:translate-x-24 group-hover:-translate-y-24" />
                                 
@@ -341,7 +341,7 @@ const Services = () => {
 
             <ServiceMarquee />
 
-            <section className="py-20 bg-secondary/10 relative">
+            <section className="py-14 bg-secondary/10 relative">
                 <div className="container mx-auto px-4 lg:px-8 text-center">
                     <motion.div
                         initial={{ opacity: 0 }}

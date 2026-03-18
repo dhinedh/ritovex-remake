@@ -4,14 +4,14 @@ import { ArrowRight } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 lg:py-28 relative overflow-hidden bg-primary dark:bg-secondary/20 text-primary-foreground dark:text-foreground">
+    <section className="py-16 lg:py-24 relative overflow-hidden bg-primary dark:bg-secondary/20 text-primary-foreground dark:text-foreground">
       <div className="container mx-auto px-4 lg:px-8 text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-white/5 backdrop-blur-lg border border-white/10 p-12 lg:p-20 rounded-[3rem] shadow-2xl"
+          className="bg-white/5 backdrop-blur-lg border border-white/10 p-10 lg:p-14 rounded-[3rem] shadow-2xl"
         >
           <p className="text-xs lg:text-sm text-primary-foreground/70 mb-6 font-bold uppercase tracking-[0.2em]">
             Have a project in mind? Just let us know!

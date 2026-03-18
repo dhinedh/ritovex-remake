@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary dark:bg-background text-primary-foreground dark:text-foreground pt-16 pb-8 border-t border-border/10">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-10 mb-12">
+        <div className="grid md:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1 text-center md:text-left">
             <Link to="/" className="flex items-center justify-center md:justify-start mb-6">
@@ -56,6 +56,23 @@ const Footer = () => {
               {["Website Development", "Custom Software Solutions", "Digital Marketing", "IT Support"].map((s) => (
                 <li key={s}><span>{s}</span></li>
               ))}
+            </ul>
+          </div>
+
+          {/* Products */}
+          <div>
+            <h4 className="font-heading font-semibold mb-4">Products</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/60 dark:text-muted-foreground">
+              <li>
+                <Link to="/shopeasy" className="hover:text-primary-foreground dark:hover:text-foreground transition-colors">
+                  ShopEasy
+                </Link>
+              </li>
+              <li>
+                <Link to="/billing-software" className="hover:text-primary-foreground dark:hover:text-foreground transition-colors">
+                  All-in-One Billing Software
+                </Link>
+              </li>
             </ul>
           </div>
 

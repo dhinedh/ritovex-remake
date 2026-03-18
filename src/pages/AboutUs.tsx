@@ -3,11 +3,19 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
 import { Phone, CheckCircle2, Target, Award, Users, Rocket, Sparkles, TrendingUp } from "lucide-react";
-import aboutImage from "@/assets/about-image.jpg";
+import aboutImage from "@/assets/about-realistic.png";
+import dhineshPhoto from "@/assets/team/dhinesh.jpg";
+import himeshPhoto from "@/assets/team/himesh.jpg";
+import dhanushBPhoto from "@/assets/team/dhanush_b.jpg";
+import jabaspinPhoto from "@/assets/team/jabaspin.jpg";
+import bhupathiPhoto from "@/assets/team/bhupathi.jpg";
+import dhanushPhoto from "@/assets/team/dhanush.jpg";
+import jaganathanPhoto from "@/assets/team/jaganathan.jpg";
+import prathishPhoto from "@/assets/team/prathish.jpg";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30, filter: "blur(4px)", scale: 0.98 },
-    visible: { opacity: 1, y: 0, filter: "blur(0px)", scale: 1, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+    visible: { opacity: 1, y: 0, filter: "blur(0px)", scale: 1, transition: { duration: 0.8 } }
 };
 
 const staggerContainer = {
@@ -26,7 +34,7 @@ const AboutUs = () => {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="relative pt-24 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-secondary/20 text-foreground">
+            <section className="relative pt-32 pb-14 lg:pt-40 lg:pb-20 overflow-hidden bg-secondary/20 text-foreground">
                 <div className="absolute inset-0">
                     {/* Vibrant Startup Mesh */}
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(139,92,246,0.15),transparent_50%),radial-gradient(circle_at_80%_70%,rgba(249,115,22,0.12),transparent_50%),radial-gradient(circle_at_50%_50%,rgba(6,182,212,0.1),transparent_50%)] dark:opacity-40" />
@@ -161,9 +169,9 @@ const AboutUs = () => {
             </section>
 
             {/* Main Content */}
-            <section className="py-20 lg:py-32 bg-background">
+            <section className="py-16 lg:py-24 bg-background">
                 <div className="container mx-auto px-4 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-32">
+                    <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center mb-20">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -225,48 +233,71 @@ const AboutUs = () => {
                             </div>
                         </motion.div>
                     </div>
+                </div>
+            </section>
 
-                    <div className="grid md:grid-cols-3 gap-8">
+            {/* Team Section */}
+            <section className="py-24 bg-secondary/10 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+                <div className="container mx-auto px-4 lg:px-8 relative z-10">
+                    <div className="text-center mb-20 max-w-3xl mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 mb-6 shadow-sm border border-primary/20 bg-primary/5"
+                        >
+                            <Users className="w-4 h-4 text-primary" />
+                            <span className="text-xs font-bold text-primary uppercase tracking-widest">
+                                The Zech Force
+                            </span>
+                        </motion.div>
+                        <h2 className="font-heading text-5xl lg:text-7xl font-bold mb-6">Our Visionaries & Experts.</h2>
+                        <p className="text-xl text-muted-foreground font-light leading-relaxed">
+                            Meet the diverse team of engineers, designers, and strategists behind Zech Soft's most innovative solutions.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
                         {[
-                            {
-                                icon: <Users className="w-8 h-8" />,
-                                title: "Expert Team",
-                                desc: "Our professionals have years of experience in various technology domains."
-                            },
-                            {
-                                icon: <Award className="w-8 h-8" />,
-                                title: "Quality First",
-                                desc: "We never compromise on the quality of our code and design."
-                            },
-                            {
-                                icon: <Phone className="w-8 h-8" />,
-                                title: "24/7 Support",
-                                desc: "We are always here to support your business and resolve any issues."
-                            }
-                        ].map((feature, i) => (
+                            { name: "Dhinesh", role: "CEO & Founder", image: dhineshPhoto },
+                            { name: "Dhanush", role: "Service Manager", image: dhanushPhoto },
+                            { name: "Jaganathan", role: "Marketing Manager", image: jaganathanPhoto },
+                            { name: "Bhupathi", role: "Product Manager", image: bhupathiPhoto },
+                            { name: "Himesh Priyan", role: "Associate Manager", image: himeshPhoto },
+                            { name: "Jabaspin", role: "Developer", image: jabaspinPhoto },
+                            { name: "Dhanush B", role: "Front End Developer", image: dhanushBPhoto },
+                            { name: "Mohan", role: "Back End Developer", id: "NS3_cp6vSpI" },
+                            { name: "Dhilip Kumar", role: "Cyber Security", id: "k3pW97tvVPs" },
+                            { name: "Prathish", role: "Developer", image: prathishPhoto }
+                        ].map((member, i) => (
                             <motion.div
                                 key={i}
-                                variants={fadeInUp}
-                                whileHover={{
-                                    y: -12,
-                                    transition: { duration: 0.4, ease: "easeOut" }
-                                }}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                className="text-center p-10 rounded-3xl bg-secondary/20 hover:bg-secondary/40 transition-all border border-border/50 hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5"
+                                transition={{ delay: i * 0.05 }}
+                                className="group relative"
                             >
-                                <motion.div
-                                    whileHover={{ scale: 1.1, rotate: 5 }}
-                                    className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-8 text-primary shadow-sm"
-                                >
-                                    {feature.icon}
-                                </motion.div>
-                                <h4 className="font-heading text-2xl font-bold mb-4">{feature.title}</h4>
-                                <p className="text-muted-foreground leading-relaxed">{feature.desc}</p>
+                                <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden border border-border/50 bg-secondary/20 shadow-lg group-hover:shadow-2xl group-hover:shadow-primary/10 transition-all duration-500">
+                                    <img
+                                        src={member.image || `https://images.unsplash.com/photo-${member.id.includes('-') ? member.id : (member.id === '4kYVU0I989E' ? '1560250097-0b93528c311a' : (member.id === 'ezIcdj3ZnKg' ? '1573496359142-b8d87734a5a2' : (member.id === 'x45xE1P6Fe4' ? '1519085360753-af0119f7cbe7' : (member.id === 'wyIs3Qd0r6o' ? '1472099645785-5658abf4ff4e' : (member.id === 'jBTMrR6Q334' ? '1580489944761-15a19d654956' : (member.id === 'PT16O8xAvDU' ? '1507003211169-0a1dd7228f2d' : (member.id === '1l6UeCc9P9o' ? '1500648767791-00dcc994a43e' : (member.id === 'NS3_cp6vSpI' ? '1542909168-82c3e7fdca5c' : (member.id === 'k3pW97tvVPs' ? '1506794778202-cad84cf45f1d' : '1539571696357-5a69c17a67c6')))))))))}?q=80&w=400&auto=format&fit=crop`}
+                                        alt={member.name}
+                                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
+                                    
+                                    <div className="absolute bottom-6 left-6 right-6">
+                                        <h4 className="text-white text-xl font-bold mb-1 tracking-tight">{member.name}</h4>
+                                        <p className="text-primary text-xs font-black uppercase tracking-widest">{member.role}</p>
+                                    </div>
+                                </div>
                             </motion.div>
                         ))}
                     </div>
                 </div>
             </section>
+
 
             <CTASection />
             <Footer />

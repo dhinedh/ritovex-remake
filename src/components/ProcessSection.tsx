@@ -68,7 +68,7 @@ const ProcessSection = () => {
                 className="relative w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-background group"
               >
                 <img
-                  src={processImage}
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
                   alt="Our professional working process"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />

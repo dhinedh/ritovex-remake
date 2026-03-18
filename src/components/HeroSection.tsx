@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Play, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/home-hero-zechsoft.png";
+import heroImage from "@/assets/home-hero-realistic.png";
 
 const HeroSection = () => {
   return (
     <section id="home" className="relative overflow-hidden">
-      <div className="container mx-auto px-4 lg:px-8 pt-8 lg:pt-12 pb-16 lg:pb-24">
+      <div className="container mx-auto px-4 lg:px-8 pt-28 lg:pt-36 pb-16 lg:pb-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <motion.div
