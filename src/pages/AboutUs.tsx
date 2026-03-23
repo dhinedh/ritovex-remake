@@ -289,7 +289,7 @@ const AboutUs = () => {
                                     
                                     <div className="absolute bottom-6 left-6 right-6">
                                         <h4 className="text-white text-xl font-bold mb-1 tracking-tight">{member.name}</h4>
-                                        <p className="text-primary text-xs font-black uppercase tracking-widest">{member.role}</p>
+                                        <p className="text-white/70 text-xs font-bold uppercase tracking-widest">{member.role}</p>
                                     </div>
                                 </div>
                             </motion.div>

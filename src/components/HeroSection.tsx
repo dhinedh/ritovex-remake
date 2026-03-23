@@ -28,15 +28,18 @@ const HeroSection = () => {
                 to="/services"
                 className="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-95"
               >
-                Get Started
+                Start Your Project
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
-              <button className="inline-flex items-center justify-center gap-3 text-sm font-bold text-foreground hover:text-primary transition-colors py-4">
+              <Link 
+                to="/services"
+                className="inline-flex items-center justify-center gap-3 text-sm font-bold text-foreground hover:text-primary transition-colors py-4"
+              >
                 <span className="w-12 h-12 rounded-full border-2 border-border flex items-center justify-center group-hover:border-primary transition-colors">
                   <Play className="w-4 h-4 fill-foreground group-hover:fill-primary" />
                 </span>
                 Watch Demo
-              </button>
+              </Link>
             </div>
           </motion.div>
 

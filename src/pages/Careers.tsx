@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
@@ -8,22 +9,22 @@ import { Briefcase, Users, Star, ArrowRight, Zap, Target, Heart } from "lucide-r
 const Careers = () => {
     const jobs = [
         {
-            title: "Senior Full Stack Developer",
-            type: "Full-Time",
-            location: "Remote / Chennai",
-            department: "Engineering"
-        },
-        {
-            title: "UI/UX Designer",
+            title: "Video Editing Freshers",
             type: "Full-Time",
             location: "Remote",
-            department: "Design"
+            department: "Content"
         },
         {
             title: "Project Manager",
-            type: "Contract",
-            location: "Chennai",
+            type: "Full-Time",
+            location: "Remote / Chennai",
             department: "Operations"
+        },
+        {
+            title: "Digital Marketing Person",
+            type: "Full-Time",
+            location: "Remote",
+            department: "Marketing"
         }
     ];
 
@@ -146,15 +147,15 @@ const Careers = () => {
                                         <h3 className="font-heading text-2xl font-bold group-hover:text-primary transition-colors">{job.title}</h3>
                                         <p className="text-muted-foreground text-sm font-medium mt-1">{job.location}</p>
                                     </div>
-                                    <button className="flex items-center gap-2 font-bold text-primary group/btn">
+                                    <Link to="/contact" className="flex items-center gap-2 font-bold text-primary group/btn">
                                         <span>Apply Now</span>
                                         <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
-                                    </button>
+                                    </Link>
                                 </motion.div>
                             ))}
                         </div>
 
-                        <div className="mt-16 p-10 rounded-3xl bg-primary text-primary-foreground text-center">
+                        <div className="mt-8 p-10 rounded-3xl bg-primary text-primary-foreground text-center">
                             <h3 className="font-heading text-2xl font-bold mb-4">Don't see a fit?</h3>
                             <p className="text-primary-foreground/80 mb-8 max-w-xl mx-auto">
                                 If you're talented and passionate but don't see a perfect role, send us your resume and we'll keep you in mind for future openings.

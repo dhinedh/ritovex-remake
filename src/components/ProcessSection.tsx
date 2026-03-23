@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Search, PenTool, Rocket } from "lucide-react";
 import processImage from "@/assets/working-process.png";
@@ -47,18 +48,12 @@ const ProcessSection = () => {
             </motion.h2>
 
             <div className="flex flex-col gap-12 w-full">
-              <motion.a
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                href="#contact"
+              <Link
+                to="/contact"
                 className="inline-flex items-center justify-center bg-foreground text-background px-10 py-4 rounded-full text-base font-bold hover:shadow-xl hover:shadow-black/10 transition-all w-fit"
               >
                 Start Your Project
-              </motion.a>
+              </Link>
 
               <motion.div
                 initial={{ opacity: 0, y: 40, rotate: -2 }}

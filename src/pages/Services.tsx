@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
@@ -329,9 +330,11 @@ const Services = () => {
                                             </div>
                                         ))}
                                     </div>
-                                    <button className="mt-12 bg-white text-black py-4 px-10 rounded-full font-bold w-fit hover:bg-accent hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-xl">
-                                        Get Details
-                                    </button>
+                                    <Link to="/contact">
+                                        <button className="mt-12 bg-white text-black py-4 px-10 rounded-full font-bold w-fit hover:bg-accent hover:text-white transition-all transform hover:scale-105 active:scale-95 shadow-xl">
+                                            Get Details
+                                        </button>
+                                    </Link>
                                 </div>
                             </motion.div>
                         ))}
@@ -349,13 +352,15 @@ const Services = () => {
                         className="max-w-3xl mx-auto"
                     >
                         <h2 className="font-heading text-4xl font-bold mb-8 italic">Need a Custom Solution?</h2>
-                        <motion.button
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="bg-primary text-primary-foreground px-12 py-5 rounded-full font-bold shadow-2xl shadow-primary/30 text-lg tracking-wide hover:bg-primary/90 transition-all"
-                        >
-                            Book a Free Consultation
-                        </motion.button>
+                        <Link to="/contact">
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="bg-primary text-primary-foreground px-12 py-5 rounded-full font-bold shadow-2xl shadow-primary/30 text-lg tracking-wide hover:bg-primary/90 transition-all"
+                            >
+                                Book a Free Consultation
+                            </motion.button>
+                        </Link>
                         <p className="mt-6 text-muted-foreground font-medium">No obligation. Just professional advice for your digital journey.</p>
                     </motion.div>
                 </div>
