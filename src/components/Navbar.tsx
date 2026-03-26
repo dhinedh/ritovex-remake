@@ -4,6 +4,7 @@ import { Menu, X, Phone, Mail, Instagram, Twitter, Facebook, ArrowRight } from "
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
 import { Logo } from "./Logo";
+import QuoteModal from "./QuoteModal";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -17,6 +18,7 @@ const navLinks = [
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -58,15 +60,13 @@ const Navbar = () => {
 
         {/* Right side */}
         <div className="hidden lg:flex items-center gap-6">
-          <div className="flex items-center gap-2 text-sm">
-            <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center">
-              <Phone className="w-4 h-4 text-primary" />
-            </div>
-            <div>
-              <p className="text-[10px] text-muted-foreground font-bold uppercase tracking-wider leading-none mb-1">Call Any Time</p>
-              <p className="font-bold text-foreground">+91 93424 00879</p>
-            </div>
-          </div>
+          <button 
+            onClick={() => setIsQuoteModalOpen(true)}
+            className="px-6 py-2.5 bg-primary text-primary-foreground rounded-full font-bold text-sm hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 flex items-center gap-2 group"
+          >
+            Get Started
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
           <ThemeToggle />
         </div>
 
@@ -210,6 +210,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
     </header>
   );
 };

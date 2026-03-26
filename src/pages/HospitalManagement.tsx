@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { 
   PlusSquare, 
   Stethoscope, 
@@ -90,6 +91,11 @@ const HospitalManagement = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>Hospital Management System (HIMS) - Zech Soft | Healthcare Precision</title>
+        <meta name="description" content="Streamline your healthcare facility with Zech Soft's intelligent HIMS. OPD/IPD automation, pharmacy integration, and HIPAA-compliant patient records." />
+        <link rel="canonical" href="https://zechsoft.tech/hospital-hims" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

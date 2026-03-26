@@ -3,28 +3,28 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Was initially hesitant about the project, but the team quickly put my mind at ease. Their expertise and creative solutions were impressive. The final product exceeded my expectations.",
-    name: "Jakob Alison",
-    role: "Project Manager at Triko",
+    text: "Zech Soft transformed our manual patient records into a lightning-fast HIMS. We've seen a 30% increase in daily patient turnover and zero billing errors since implementation.",
+    name: "Dr. Rajesh Kumar",
+    role: "Director at City Care Hospitals",
     rating: 5,
   },
   {
-    text: "I came to them with a vague idea, and they helped me refine it into a concrete plan. Throughout the process, they kept me informed and involved, ensuring I was happy with the direction.",
-    name: "Alisa Olivia",
-    role: "CTO at Zech Soft",
+    text: "The School ERP solution provided by Zech Soft is a game-changer. Attendance tracking and fee management that used to take days now happen in seconds. Highly recommended!",
+    name: "Sarah Williams",
+    role: "Principal, Oakridge International",
     rating: 5,
   },
   {
-    text: "Working with them was a true pleasure. They were responsive, communicative, and always willing to go the extra mile. I especially appreciated their attention to detail.",
-    name: "Jordan Walk",
-    role: "Software Engineer at Briks",
+    text: "We needed a robust manufacturing portfolio to reach global clients. Zech Soft delivered a site that looks premium and functions perfectly. Our international inquiries have doubled.",
+    name: "Arjun Mehta",
+    role: "CEO at Global India Corp",
     rating: 5,
   },
   {
-    text: "The team demonstrated exceptional skill and dedication. They addressed every concern promptly and delivered a solution that perfectly aligned with our vision.",
-    name: "Ema Watson",
-    role: "Founder at Z-Tech",
-    rating: 4,
+    text: "The AI-driven predictive analytics they integrated into our payroll system saved us over $12,000 in the first quarter alone by identifying staffing inefficiencies we hadn't noticed.",
+    name: "Michael Chen",
+    role: "Ops Manager at TechFlow Systems",
+    rating: 5,
   },
 ];
 

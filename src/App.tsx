@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
@@ -18,39 +19,43 @@ import ManufacturingPortfolio from "./pages/ManufacturingPortfolio";
 import PayrollManufacturingERP from "./pages/PayrollManufacturingERP";
 import BillingSoftware from "./pages/BillingSoftware";
 import ScrollToTop from "./components/ScrollToTop";
+import ZechBot from "./components/ZechBot";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <ThemeProvider defaultTheme="light" storageKey="zechsoft-theme">
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/shopeasy" element={<ShopEasy />} />
-          <Route path="/school-erp" element={<SchoolManagement />} />
-          <Route path="/hospital-hims" element={<HospitalManagement />} />
-          <Route path="/manufacturing" element={<ManufacturingPortfolio />} />
-          <Route path="/payroll-erp" element={<PayrollManufacturingERP />} />
-          <Route path="/billing-software" element={<BillingSoftware />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-      </ThemeProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <ThemeProvider defaultTheme="light" storageKey="zechsoft-theme">
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <ScrollToTop />
+            <ZechBot />
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/shopeasy" element={<ShopEasy />} />
+              <Route path="/school-erp" element={<SchoolManagement />} />
+              <Route path="/hospital-hims" element={<HospitalManagement />} />
+              <Route path="/manufacturing" element={<ManufacturingPortfolio />} />
+              <Route path="/payroll-erp" element={<PayrollManufacturingERP />} />
+              <Route path="/billing-software" element={<BillingSoftware />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </ThemeProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;

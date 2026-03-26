@@ -14,6 +14,7 @@ import {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
+import { Helmet } from "react-helmet-async";
 
 // Asset imports (assuming they were copied to src/assets)
 import heroImg from "@/assets/shopeasy-hero-realistic.png";
@@ -40,6 +41,11 @@ const staggerContainer = {
 const ShopEasy = () => {
   return (
     <div className="min-h-screen bg-[#050505] text-white selection:bg-emerald-500/30">
+      <Helmet>
+        <title>ShopEasy - Multi-Vendor E-Commerce Platform | Zech Soft</title>
+        <meta name="description" content="ShopEasy is a next-generation multi-vendor marketplace platform scaling with 10k+ daily users. Optimized for conversion, speed, and mobile shopping excellence." />
+        <link rel="canonical" href="https://zechsoft.tech/shopeasy" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

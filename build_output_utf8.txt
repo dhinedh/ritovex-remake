@@ -1,0 +1,68 @@
+﻿
+> vite_react_shadcn_ts@0.0.0 build
+> vite build
+
+node.exe : [31mfailed to 
+load config from D:\zechso
+ft\ritovex-remake\vite.con
+fig.ts[39m
+At line:1 char:1
++ & "C:\nvm4w\nodejs/node.
+exe" "C:\nvm4w\nodejs/node
+_modules/npm/bin/np ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (  
+  [31mfailed to ....con   
+ fig.ts[39m:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+[31merror during build:
+ReferenceError: require 
+is not defined in ES 
+module scope, you can use 
+import instead
+    at file:///D:/zechsoft
+/ritovex-remake/node_modul
+es/vite-plugin-prerender/d
+ist/index.mjs:6:21
+    at ModuleJob.run (node
+:internal/modules/esm/modu
+le_job:343:25)
+    at async onImport.trac
+ePromise.__proto__ (node:i
+nternal/modules/esm/loader
+:665:26)
+    at async 
+loadConfigFromBundledFile 
+(file:///D:/zechsoft/ritov
+ex-remake/node_modules/vit
+e/dist/node/chunks/dep-C6u
+TJdX2.js:66958:15)
+    at async 
+loadConfigFromFile (file:/
+//D:/zechsoft/ritovex-rema
+ke/node_modules/vite/dist/
+node/chunks/dep-C6uTJdX2.j
+s:66799:24)
+    at async 
+resolveConfig (file:///D:/
+zechsoft/ritovex-remake/no
+de_modules/vite/dist/node/
+chunks/dep-C6uTJdX2.js:663
+99:24)
+    at async build (file:/
+//D:/zechsoft/ritovex-rema
+ke/node_modules/vite/dist/
+node/chunks/dep-C6uTJdX2.j
+s:65487:18)
+    at async 
+CAC.<anonymous> (file:///D
+:/zechsoft/ritovex-remake/
+node_modules/vite/dist/nod
+e/cli.js:829:5)[39m

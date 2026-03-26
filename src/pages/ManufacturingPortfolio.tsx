@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { 
   Factory, 
   Globe2, 
@@ -70,6 +71,11 @@ const ManufacturingPortfolio = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>Manufacturing & Industrial Portfolio - Zech Soft | Global Engineering</title>
+        <meta name="description" content="Explore Zech Soft's advanced industrial portfolio. Engineering the future with Smart Manufacturing, Industry 4.0, and sustainable global supply chain solutions." />
+        <link rel="canonical" href="https://zechsoft.tech/manufacturing-portfolio" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import careersHeroBg from "@/assets/careers-hero-bg.png";
 import { Briefcase, Users, Star, ArrowRight, Zap, Target, Heart } from "lucide-react";
 
@@ -30,6 +31,11 @@ const Careers = () => {
 
     return (
         <div className="min-h-screen bg-background text-foreground">
+            <Helmet>
+                <title>Careers - Zech Soft | Join Our Team</title>
+                <meta name="description" content="Join Zech Soft and build your future with a team of innovative tech experts. Explore open positions for developers, designers, and project managers." />
+                <link rel="canonical" href="https://zechsoft.tech/careers" />
+            </Helmet>
             <Navbar />
 
             {/* Page Hero */}

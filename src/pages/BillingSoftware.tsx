@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { 
   Receipt, 
   Package, 
@@ -85,6 +86,11 @@ const BillingSoftware = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      <Helmet>
+        <title>ZechBill - Advanced Billing & POS Software | Zech Soft</title>
+        <meta name="description" content="Transactional excellence with ZechBill. GST/VAT invoicing, live inventory sync, and omnichannel POS for startups and scaling enterprises." />
+        <link rel="canonical" href="https://zechsoft.tech/billing-software" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

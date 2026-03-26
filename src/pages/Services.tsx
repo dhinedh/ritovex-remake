@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import ServiceMarquee from "@/components/ServiceMarquee";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import servicesHeroBg from "@/assets/services-hero-realistic.png";
 import {
     Code2,
@@ -177,6 +178,11 @@ const specialServices = [
 const Services = () => {
     return (
         <div className="min-h-screen bg-background text-foreground">
+            <Helmet>
+                <title>Our Services - Zech Soft | Web, App & ERP Solutions</title>
+                <meta name="description" content="Explore our comprehensive digital solutions: Web Development, Mobile Apps, ERP Systems, Business Automation, and Digital Marketing. Tailored for your business growth." />
+                <link rel="canonical" href="https://zechsoft.tech/services" />
+            </Helmet>
             <Navbar />
 
             {/* Page Hero */}

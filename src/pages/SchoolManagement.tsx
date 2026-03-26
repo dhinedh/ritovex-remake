@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { 
   GraduationCap, 
   Users, 
@@ -100,6 +101,11 @@ const SchoolManagement = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>School Management ERP - Zech Soft | Future of Education</title>
+        <meta name="description" content="A next-generation School ERP solution. Streamline admissions, attendance, grading, and administration with our cloud-native educational platform." />
+        <link rel="canonical" href="https://zechsoft.tech/school-erp" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

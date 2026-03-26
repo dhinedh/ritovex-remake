@@ -3,23 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
     <title>Zech Soft - Innovative Digital Solutions</title>
-    <meta name="description" content="Zech Soft provides innovative and reliable digital solutions including Web Development, Software, and Digital Marketing." />
+    <meta name="description" content="Zech Soft provides innovative and reliable digital solutions including Web Development, ERP systems, and Digital Marketing. Empowering businesses through technology." />
     <meta name="author" content="Zech Soft" />
+    <meta name="keywords" content="Zech Soft, Software Development, Web Development, ERP, Business Solutions, Digital Marketing" />
 
     <!-- Open Graph / SEO -->
-    <meta property="og:title" content="Zech Soft" />
-    <meta property="og:description" content="Zech Soft - Innovative Digital Solutions" />
+    <meta property="og:title" content="Zech Soft - Innovative Digital Solutions" />
+    <meta property="og:description" content="Leading provider of custom software, web development, and digital strategies." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zechsoft.tech/" />
+    <meta property="og:image" content="https://zechsoft.tech/og-image.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Zech Soft" />
-    <meta name="twitter:description" content="Zech Soft - Innovative Digital Solutions" />
+    <meta name="twitter:description" content="Empowering businesses with innovative technology solutions." />
+
+    <!-- Brand Distinction Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Zech Soft",
+      "url": "https://zechsoft.tech",
+      "logo": "https://zechsoft.tech/logo.png",
+      "description": "Zech Soft is a technology-focused digital solutions provider specializing in business automation and innovative software.",
+      "sameAs": [
+        "https://www.linkedin.com/company/zechsoft",
+        "https://twitter.com/zechsoft"
+      ]
+    }
+    </script>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- SEO & Accessibility Fallback: This content is replaced by React once loaded -->
+      <div style="font-family: 'Plus Jakarta Sans', sans-serif; max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+        <header style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 60px;">
+          <div style="font-size: 24px; font-weight: 800; color: #0f172a;">ZECH SOFT</div>
+        </header>
+        
+        <main>
+          <section style="margin-bottom: 80px;">
+            <h1 style="font-size: 48px; font-weight: 900; color: #0f172a; line-height: 1.1; margin-bottom: 24px;">
+              Innovative Digital Solutions <br/>for Modern Businesses.
+            </h1>
+            <p style="font-size: 18px; color: #475569; line-height: 1.6; max-width: 700px; margin-bottom: 40px;">
+              Zech Soft empowers organizations through custom software development, intelligent ERP systems, and state-of-the-art AI automation. We specialize in School Management (ERP), Hospital Information Systems (HIMS), and Enterprise Manufacturing solutions.
+            </p>
+          </section>
+
+          <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 80px;">
+            <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 20px;">
+              <h3 style="font-weight: 700; margin-bottom: 12px; color: #0f172a;">School ERP</h3>
+              <p style="color: #64748b; font-size: 14px; line-height: 1.6;">Automated student records, fee management, and performance analytics for modern schools.</p>
+            </div>
+            <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 20px;">
+              <h3 style="font-weight: 700; margin-bottom: 12px; color: #0f172a;">Hospital HIMS</h3>
+              <p style="color: #64748b; font-size: 14px; line-height: 1.6;">Integrated patient care, pharmacy management, and paperless billing for healthcare providers.</p>
+            </div>
+            <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 20px;">
+              <h3 style="font-weight: 700; margin-bottom: 12px; color: #0f172a;">AI & Automation</h3>
+              <p style="color: #64748b; font-size: 14px; line-height: 1.6;">Intelligent chatbots, predictive analytics, and automated workflows to reduce OPEX by up to 40%.</p>
+            </div>
+            <div style="padding: 30px; border: 1px solid #e2e8f0; border-radius: 20px;">
+              <h3 style="font-weight: 700; margin-bottom: 12px; color: #0f172a;">Manufacturing ERP</h3>
+              <p style="color: #64748b; font-size: 14px; line-height: 1.6;">Inventory tracking, production scheduling, and payroll integration for industrial units.</p>
+            </div>
+          </section>
+        </main>
+
+        <footer style="margin-top: 100px; border-top: 1px solid #e2e8f0; padding-top: 40px; color: #94a3b8; font-size: 14px;">
+          <p>&copy; 2024 Zech Soft. All rights reserved.</p>
+          <noscript>
+            <p style="color: #ef4444; margin-top: 10px;"><strong>Note: For the full interactive experience, please enable JavaScript in your browser.</strong></p>
+          </noscript>
+        </footer>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import contactHeroBg from "@/assets/contact-hero-bg.png";
 import { Mail, Phone, MapPin, Send, MessageSquare, Clock } from "lucide-react";
 
@@ -13,6 +14,11 @@ const fadeInUp = {
 const Contact = () => {
     return (
         <div className="min-h-screen bg-background text-foreground">
+            <Helmet>
+                <title>Contact Us - Zech Soft | Get In Touch</title>
+                <meta name="description" content="Have a project in mind? Contact Zech Soft for expert digital solutions. We're here to help you build something amazing together." />
+                <link rel="canonical" href="https://zechsoft.tech/contact" />
+            </Helmet>
             <Navbar />
 
             {/* Page Hero */}

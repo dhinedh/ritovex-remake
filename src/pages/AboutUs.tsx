@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
 import { Phone, CheckCircle2, Target, Award, Users, Rocket, Sparkles, TrendingUp } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import aboutImage from "@/assets/about-realistic.png";
 import dhineshPhoto from "@/assets/team/dhinesh.jpg";
 import himeshPhoto from "@/assets/team/himesh.jpg";
@@ -31,6 +32,11 @@ const staggerContainer = {
 const AboutUs = () => {
     return (
         <div className="min-h-screen bg-background">
+            <Helmet>
+                <title>About Us - Zech Soft | Our Mission & Team</title>
+                <meta name="description" content="Learn more about Zech Soft, our mission to empower businesses with innovative technology, and the expert team behind our digital solutions." />
+                <link rel="canonical" href="https://zechsoft.tech/about-us" />
+            </Helmet>
             <Navbar />
 
             {/* Page Hero */}

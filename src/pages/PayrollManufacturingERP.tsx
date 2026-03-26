@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { 
   BarChart3, 
   Users, 
@@ -86,6 +87,11 @@ const PayrollManufacturingERP = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Helmet>
+        <title>Payroll & Manufacturing ERP - Zech Soft | Industrial Efficiency</title>
+        <meta name="description" content="Synchronized efficiency for Industry 4.0. Our specialized ERP integrates automated payroll with production tracking and raw material management for modern factories." />
+        <link rel="canonical" href="https://zechsoft.tech/payroll-manufacturing-erp" />
+      </Helmet>
       <Navbar />
 
       {/* Hero Section */}

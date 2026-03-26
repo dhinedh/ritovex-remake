@@ -3,8 +3,18 @@ import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import { motion } from "framer-motion";
 import { Calendar, User, ArrowRight, Search, Tag } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const blogs = [
+    {
+        title: "The 2024 Digital Transformation Roadmap: Why ERP is No Longer Optional",
+        desc: "In an era of rapid AI advancement, legacy systems are the biggest bottleneck to growth. Our founder explores how modern ERP integration can reclaim 15+ hours of weekly productivity for mid-sized enterprises.",
+        date: "September 12, 2025",
+        author: "Founder, Zech Soft",
+        category: "Strategy",
+        readTime: "12 min read",
+        featured: true
+    },
     {
         title: "Simple Tips for Better Website Design",
         desc: "In today's digital age, your website is often the first point of contact for potential customers. Learn how to make it count with these simple yet effective design tips that enhance user experience and drive conversions.",
@@ -50,6 +60,11 @@ const blogs = [
 const Blog = () => {
     return (
         <div className="min-h-screen bg-background text-foreground">
+            <Helmet>
+                <title>Blog & Insights - Zech Soft | Tech, Design & Business</title>
+                <meta name="description" content="Stay updated with the latest trends in technology, design, and business strategy. Expert insights and guides from the Zech Soft team." />
+                <link rel="canonical" href="https://zechsoft.tech/blog" />
+            </Helmet>
             <Navbar />
 
             {/* Blog Hero */}
