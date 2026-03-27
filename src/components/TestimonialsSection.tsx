@@ -3,27 +3,39 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    text: "Zech Soft transformed our manual patient records into a lightning-fast HIMS. We've seen a 30% increase in daily patient turnover and zero billing errors since implementation.",
-    name: "Dr. Rajesh Kumar",
-    role: "Director at City Care Hospitals",
+    text: "Zech Soft developed a complete autonomous supply chain system for our food production units. Their AI-driven inventory management has reduced our waste by 25%.",
+    name: "Director",
+    role: "Mansara Foods Pvt Ltd",
     rating: 5,
   },
   {
-    text: "The School ERP solution provided by Zech Soft is a game-changer. Attendance tracking and fee management that used to take days now happen in seconds. Highly recommended!",
-    name: "Sarah Williams",
-    role: "Principal, Oakridge International",
+    text: "The custom manufacturing ERP and global portfolio they built for Refranox have been instrumental in our international expansion. A truly innovative digital partner.",
+    name: "Managing Director",
+    role: "Refranox Insulation Private Limited",
     rating: 5,
   },
   {
-    text: "We needed a robust manufacturing portfolio to reach global clients. Zech Soft delivered a site that looks premium and functions perfectly. Our international inquiries have doubled.",
-    name: "Arjun Mehta",
-    role: "CEO at Global India Corp",
+    text: "Our logistics efficiency skyrocketed after Zech Soft automated our tracking and cargo management systems. Their complete digital solution is second to none.",
+    name: "Operations Head",
+    role: "a3 Express Cargo",
     rating: 5,
   },
   {
-    text: "The AI-driven predictive analytics they integrated into our payroll system saved us over $12,000 in the first quarter alone by identifying staffing inefficiencies we hadn't noticed.",
-    name: "Michael Chen",
-    role: "Ops Manager at TechFlow Systems",
+    text: "Zech Soft provided us with high-end corporate solutions that perfectly represent our global presence. Their attention to detail and AI integration is impressive.",
+    name: "CEO",
+    role: "Global India Corporation",
+    rating: 5,
+  },
+  {
+    text: "From automated billing to customer management, Zech Soft simplified our catering operations across multiple locations. Fast, reliable, and professional.",
+    name: "Founder",
+    role: "Vignesh Catering Services",
+    rating: 5,
+  },
+  {
+    text: "The design precision and development quality delivered for Ezil designs exceeded our expectations. They are our go-to partner for all things digital.",
+    name: "Creative Director",
+    role: "Ezil Designs",
     rating: 5,
   },
 ];

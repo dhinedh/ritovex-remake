@@ -4,24 +4,24 @@ import { Sparkles, Brain, Zap, Shield, Cpu, BarChart } from "lucide-react";
 const features = [
   {
     icon: <Brain className="w-8 h-8" />,
-    title: "Predictive Analytics",
-    desc: "Transform your data into foresight. Our AI models predict trends, demand, and risks with 95%+ accuracy."
+    title: "AI Growth Diagnostic",
+    desc: "We analyze your business data to identify inefficient workflows and untapped revenue opportunities with 95%+ accuracy."
   },
   {
     icon: <Cpu className="w-8 h-8" />,
-    title: "Process Automation",
-    desc: "Eliminate repetitive tasks. Our intelligent agents handle workflows, from payroll to inventory syncing."
+    title: "Automated Ecosystems",
+    desc: "Deploy intelligent agents that handle everything from inventory syncing to customer support, reducing OpEx by up to 40%."
   },
   {
     icon: <Shield className="w-8 h-8" />,
-    title: "Anomaly Detection",
-    desc: "Secure your operations. Real-time AI monitoring detects fraud, errors, and security threats instantly."
+    title: "Predictive Solving",
+    desc: "Monitor your operations in real-time. Our AI detects and solves logistical problems before they impact your customers."
   }
 ];
 
 const AISection = () => {
   return (
-    <section className="py-24 lg:py-32 bg-foreground text-background overflow-hidden relative">
+    <section className="py-24 lg:py-32 bg-zinc-950 text-white overflow-hidden relative">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/10 -skew-x-12 translate-x-1/2 pointer-events-none" />
       <motion.div
@@ -42,9 +42,9 @@ const AISection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 border border-background/20 rounded-full px-4 py-1.5 bg-background/5 backdrop-blur-md mb-6">
+            <div className="inline-flex items-center gap-2 border border-white/20 rounded-full px-4 py-1.5 bg-white/5 backdrop-blur-md mb-6">
               <Sparkles className="w-4 h-4 text-primary" />
-              <span className="text-xs font-bold uppercase tracking-widest text-background/80">
+              <span className="text-xs font-bold uppercase tracking-widest text-white/80">
                 Future-Ready Technology
               </span>
             </div>
@@ -54,19 +54,19 @@ const AISection = () => {
               <span className="text-primary italic">Intelligent Automation.</span>
             </h2>
             
-            <p className="text-xl text-background/60 leading-relaxed mb-10 max-w-xl">
+            <p className="text-xl text-white/60 leading-relaxed mb-10 max-w-xl">
               We don't just build software; we build intelligence. Our custom AI solutions integrate seamlessly into your existing workflows, reducing costs by up to 40% and accelerating growth.
             </p>
 
             <div className="grid gap-8">
               {features.map((f, i) => (
                 <div key={i} className="flex gap-6 group">
-                  <div className="w-16 h-16 rounded-2xl bg-background/5 border border-background/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     {f.icon}
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-xl mb-2">{f.title}</h4>
-                    <p className="text-background/50 leading-relaxed">{f.desc}</p>
+                    <p className="text-white/50 leading-relaxed">{f.desc}</p>
                   </div>
                 </div>
               ))}
@@ -81,7 +81,7 @@ const AISection = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="relative"
           >
-            <div className="aspect-square relative rounded-[3rem] overflow-hidden border border-background/10 bg-background/5 group">
+            <div className="aspect-square relative rounded-[3rem] overflow-hidden border border-white/10 bg-white/5 group">
                <img 
                  src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2400&auto=format&fit=crop" 
                  alt="AI Visualization" 
@@ -92,14 +92,14 @@ const AISection = () => {
                <motion.div 
                  animate={{ y: [0, -20, 0] }}
                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                 className="absolute top-10 right-10 p-6 bg-background rounded-3xl border border-border shadow-2xl text-foreground"
+                 className="absolute top-10 right-10 p-6 bg-zinc-900 rounded-3xl border border-white/10 shadow-2xl text-white"
                >
                  <div className="flex items-center gap-3 mb-2">
                     <Zap className="w-5 h-5 text-primary" />
                     <span className="text-sm font-bold">Speed Factor</span>
                  </div>
                  <div className="text-3xl font-black">10.5x</div>
-                 <p className="text-[10px] text-muted-foreground uppercase font-bold tracking-tighter">Faster Processing</p>
+                 <p className="text-[10px] text-white/50 uppercase font-bold tracking-tighter\">Faster Processing</p>
                </motion.div>
 
                <motion.div 

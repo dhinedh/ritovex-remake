@@ -23,60 +23,60 @@ const staggerContainer = {
 
 const projects = [
     {
-        title: "School Management System",
-        desc: "Automated administrative workflows for over 50 schools. Transitioned institutions from manual paperwork to a 100% digital ecosystem within 3 months.",
-        category: "EdTech",
-        tags: ["React", "Node.js", "PostgreSQL", "Socket.io"],
+        title: "Autonomous School Ecosystem",
+        desc: "Analyzed administrative friction in 50+ schools. Deployed an AI-driven ERP that automated fee tracking and grading, reclaiming 35% of staff bandwidth for student growth.",
+        category: "EdTech Automation",
+        tags: ["AI ERP", "Automation", "PostgreSQL", "Socket.io"],
         results: "35% Increase in Admin Speed",
         color: "bg-blue-500/10 border-blue-500/20",
         textColor: "text-blue-500",
         path: "/school-erp"
     },
     {
-        title: "ShopEasy E-Commerce",
-        desc: "Engineered a high-performance multi-vendor marketplace capable of handling 10k+ concurrent users. Optimizing for SEO resulted in a 400% organic traffic surge.",
-        category: "E-Commerce",
-        tags: ["Next.js", "Node.js", "PostgreSQL", "Stripe"],
-        results: "2.4s Load Time (Global)",
+        title: "ShopEasy AI E-Commerce",
+        desc: "Diagnosed high cart abandonment and slow inventory cycles. Integrated real-time predictive analytics to automate stock management and personalized customer journeys.",
+        category: "E-Commerce Growth",
+        tags: ["Predictive AI", "Next.js", "PostgreSQL", "Stripe"],
+        results: "400% Organic Traffic Surge",
         color: "bg-orange-500/10 border-orange-500/20",
         textColor: "text-orange-500",
         path: "/shopeasy"
     },
     {
-        title: "Hospital Management System",
-        desc: "Deployed an integrated HIMS that connected pharmacy, lab, and OPD. Reduced patient waiting times by 42% through intelligent scheduling algorithms.",
-        category: "Healthcare",
-        tags: ["React Native", "Firebase", "WebRTC"],
-        results: "Zero Billing Discrepancies",
+        title: "Intelligent HIMS Healthcare",
+        desc: "Identified critical scheduling conflicts in patient care. Deployed a complete digital solution that uses AI algorithms to reduce wait times and ensure zero billing errors.",
+        category: "Healthcare Solutions",
+        tags: ["AI Scheduling", "Firebase", "WebRTC"],
+        results: "42% Reduction in Wait Times",
         color: "bg-emerald-500/10 border-emerald-500/20",
         textColor: "text-emerald-500",
         path: "/hospital-hims"
     },
     {
-        title: "Manufacturing Corporate Portfolios",
-        desc: "Designed premium digital presences for industrial giants. Using custom Framer Motion animations to showcase machinery and scale with visual excellence.",
-        category: "Corporate",
-        tags: ["Next.js", "Tailwind CSS", "Framer Motion", "SEO"],
+        title: "Manufacturing AI Portfolios",
+        desc: "Solved the 'Invisible Giant' problem for industrial leaders. Built premium digital presences that use automated lead capture to double international inquiries.",
+        category: "Corporate Visibility",
+        tags: ["Automation", "Framer Motion", "SEO Strategy"],
         results: "2x Lead Capture Rate",
         color: "bg-purple-500/10 border-purple-500/20",
         textColor: "text-purple-500",
         path: "/manufacturing"
     },
     {
-        title: "Payroll & Manufacturing ERP",
-        desc: "Custom ERP specifically built for heavy industries. Integrated biometrics and production tracking to eliminate ghost-work and reduce overheads.",
-        category: "ERP Solutions",
-        tags: ["React", "Express", "MySQL", "Chart.js"],
+        title: "Heavy-Industry Payroll ERP",
+        desc: "Analyzed ghost-work and overhead leakages in manufacturing units. Integrated biometric AI and production tracking to secure the bottom line.",
+        category: "Industrial Efficiency",
+        tags: ["Biometric AI", "MySQL", "Chart.js"],
         results: "20% Reduction in Overheads",
         color: "bg-cyan-500/10 border-cyan-500/20",
         textColor: "text-cyan-500",
         path: "/payroll-erp"
     },
     {
-        title: "All-in-One Billing Software",
-        desc: "A distributed billing SaaS for small to mid-sized retail. Simplified GST compliance and inventory management for 500+ daily active businesses.",
-        category: "SaaS",
-        tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+        title: "Global Retail Billing SaaS",
+        desc: "Solved GST compliance and inventory syncing problems for 500+ businesses. A complete digital ecosystem that automates retail complexity.",
+        category: "Retail Automation",
+        tags: ["SaaS", "Automation", "MongoDB"],
         results: "99.9% System Uptime",
         color: "bg-lime-500/10 border-lime-500/20",
         textColor: "text-lime-500",
@@ -198,7 +198,7 @@ const Projects = () => {
                             >
                                 <div className="flex justify-between items-start mb-12">
                                     <div className="flex flex-col gap-2">
-                                        <div className={`w-fit px-4 py-1.5 rounded-full bg-white/80 border border-white font-bold text-[10px] uppercase tracking-wider ${project.textColor}`}>
+                                        <div className={`w-fit px-4 py-1.5 rounded-full bg-white/80 dark:bg-zinc-800/80 border border-white/20 font-bold text-[10px] uppercase tracking-wider ${project.textColor}`}>
                                             {project.category}
                                         </div>
                                         <div className="flex items-center gap-1.5 text-primary">

@@ -139,7 +139,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                       <div className="space-y-3">
                         <label className="text-sm font-bold uppercase tracking-wider text-muted-foreground">Approximate Budget</label>
                         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                          {["<$5k", "$5k-$15k", "$15k-$50k", "$50k+", "Undecided"].map((b) => (
+                          {["<₹1 Lakh", "₹1L - ₹5 Lakhs", "₹5L - ₹15 Lakhs", "₹15 Lakhs+", "Undecided"].map((b) => (
                             <button
                               key={b}
                               type="button"

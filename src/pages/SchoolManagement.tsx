@@ -76,7 +76,7 @@ const SchoolManagement = () => {
     {
       name: "Starter",
       desc: "Perfect for small to medium-sized schools looking to digitize their operations.",
-      price: "$299",
+      price: "₹14,999",
       period: "/month",
       features: ["Up to 500 Students", "Basic Attendance & Grading", "Parent Portal Access", "Email Support", "Standard Reporting"],
       recommended: false
@@ -84,7 +84,7 @@ const SchoolManagement = () => {
     {
       name: "Professional",
       desc: "Advanced features for growing institutions requiring comprehensive management.",
-      price: "$599",
+      price: "₹29,999",
       period: "/month",
       features: ["Up to 2000 Students", "Advanced Analytics & AI", "Custom App Branding", "Payment Gateway Integration", "24/7 Priority Support"],
       recommended: true

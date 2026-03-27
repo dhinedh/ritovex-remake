@@ -63,14 +63,14 @@ const BillingSoftware = () => {
   const pricing = [
     {
       name: "Standard",
-      price: "$19",
+      price: "₹999",
       desc: "Essential features for small retailers and boutiques.",
       features: ["Single Store", "Unlimited Invoices", "Basic Inventory", "Email Support"],
       isPopular: false
     },
     {
       name: "Professional",
-      price: "$49",
+      price: "₹2,999",
       desc: "Complete toolkit for growing mid-sized businesses.",
       features: ["Up to 5 Stores", "Multi-User Access", "Advanced Inventory", "GST/VAT Filing Support", "Priority Support"],
       isPopular: true

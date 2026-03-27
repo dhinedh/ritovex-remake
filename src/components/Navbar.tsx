@@ -50,7 +50,7 @@ const Navbar = () => {
               to={link.path}
               className={`text-sm font-medium transition-colors ${location.pathname === link.path
                 ? "text-primary font-bold"
-                : "text-muted-foreground hover:text-foreground"
+                : "text-muted-foreground/80 dark:text-zinc-400/90 hover:text-foreground active:text-primary transition-all"
                 }`}
             >
               {link.name}

@@ -349,12 +349,12 @@ const ShopEasy = () => {
                 {[
                     { 
                         name: "Founder", 
-                        price: "199", 
+                        price: "₹15,999", 
                         features: ["Up to 100 Products", "Standard Analytics", "Community Support", "Basic SEO Tools"] 
                     },
                     { 
                         name: "Scale", 
-                        price: "499", 
+                        price: "₹39,999", 
                         featured: true,
                         features: ["Unlimited Products", "Advanced AI Insights", "Priority 24/7 Support", "Multi-vendor Dashboard", "API Access"] 
                     },
@@ -369,6 +369,10 @@ const ShopEasy = () => {
                         className={`p-6 sm:p-10 rounded-[2.5rem] lg:rounded-[3rem] border transition-all ${plan.featured ? 'bg-emerald-500/10 border-emerald-500/50 shadow-[0_0_50px_rgba(16,185,129,0.15)] ring-2 ring-emerald-500/20' : 'bg-white/5 border-white/10'}`}
                     >
                         <div className="text-sm font-bold uppercase tracking-widest text-zinc-500 mb-4">{plan.name}</div>
+                        <div className="flex items-baseline gap-1 mb-8">
+                            <span className="text-4xl font-black text-white">{plan.price}</span>
+                            {plan.price !== "Custom" && <span className="text-zinc-500 text-sm font-bold tracking-widest">/MO</span>}
+                        </div>
                         <ul className="space-y-4 mb-10">
                             {plan.features.map((feat, j) => (
                                 <li key={j} className="flex items-center gap-3 text-sm text-zinc-400">

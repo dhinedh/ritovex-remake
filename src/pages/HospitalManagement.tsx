@@ -66,7 +66,7 @@ const HospitalManagement = () => {
     {
       name: "Clinic Pro",
       desc: "Ideal for small to medium clinics and outpatient centers.",
-      price: "$199",
+      price: "₹9,999",
       period: "/month",
       features: ["Up to 5 Doctors", "OPD & Prescription", "Pharmacy Management", "Email Support", "Basic Reporting"],
       recommended: false
@@ -74,7 +74,7 @@ const HospitalManagement = () => {
     {
       name: "Multispecialty",
       desc: "Complete solution for mid-sized hospitals and nursing homes.",
-      price: "$499",
+      price: "₹24,999",
       period: "/month",
       features: ["Unlimited Staff", "IPD & Operation Theater", "LIS & RIS Integration", "Insurance Module", "24/7 Priority Support"],
       recommended: true

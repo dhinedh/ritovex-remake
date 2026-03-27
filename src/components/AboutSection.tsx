@@ -79,8 +79,8 @@ const AboutSection = () => {
                   <span className="w-1.5 h-6 bg-primary rounded-full" />
                   Our Mission
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  To empower businesses with smart, scalable, and innovative technology solutions that drive measurable growth and long-term success.
+                <p className="text-muted-foreground leading-relaxed font-medium">
+                  To identify critical business bottlenecks through AI-driven analysis and eliminate them with high-performance automation that fuels sustainable growth.
                 </p>
               </motion.div>
 
@@ -90,25 +90,25 @@ const AboutSection = () => {
                   Our Vision
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To become a trusted global technology partner known for delivering high-quality digital solutions that transform businesses.
+                  To be the global engine for business efficiency, where every problem is met with an intelligent, automated digital solution.
                 </p>
               </motion.div>
 
               <motion.div variants={fadeInUp} className="group">
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3 flex items-center gap-2">
                   <span className="w-1.5 h-6 bg-primary rounded-full" />
-                  What Makes Us Different
+                  Why We Lead
                 </h3>
-                <ul className="grid sm:grid-cols-2 gap-3 text-sm text-muted-foreground font-medium">
+                <ul className="grid sm:grid-cols-2 gap-3 text-sm text-muted-foreground font-bold">
                   {[
-                    "Client-focused approach",
-                    "Customized solutions",
-                    "Affordable & scalable",
-                    "Professional support",
-                    "Real business results",
+                    "AI Problem Diagnosis",
+                    "Automated Ecosystems",
+                    "Complete Digital Strategy",
+                    "Measurable ROI Tracking",
+                    "Scalable Future-Proofing",
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-2">
-                      <div className="w-1 h-1 rounded-full bg-primary" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                       {item}
                     </li>
                   ))}

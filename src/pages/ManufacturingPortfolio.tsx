@@ -55,7 +55,7 @@ const ManufacturingPortfolio = () => {
   ];
 
   const stats = [
-    { label: "Production Assets", value: "$4.5B" },
+    { label: "Production Assets", value: "₹37,500+ Cr" },
     { label: "Global Warehouses", value: "50+" },
     { label: "Skilled Workforce", value: "25k+" },
     { label: "Fortune 500 Clients", value: "120+" }

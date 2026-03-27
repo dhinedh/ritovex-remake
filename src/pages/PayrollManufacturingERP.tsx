@@ -65,14 +65,14 @@ const PayrollManufacturingERP = () => {
     {
       name: "Smart Factory",
       desc: "For small manufacturing units seeking digital transformation.",
-      price: "$299",
+      price: "₹14,999",
       features: ["Up to 50 Workers", "Core Payroll Module", "Standard Production Tracking", "Email Support"],
       recommended: false
     },
     {
       name: "Industrial Core",
       desc: "Perfect for mid-sized factories with complex workflows.",
-      price: "$699",
+      price: "₹34,999",
       features: ["Unlimited Workers", "Advanced MRP System", "Biometric Integration", "Multi-Shift Management", "24/7 Priority Support"],
       recommended: true
     },

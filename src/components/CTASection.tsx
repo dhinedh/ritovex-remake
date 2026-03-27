@@ -13,7 +13,7 @@ const CTASection = () => {
           transition={{ duration: 0.6 }}
           className="bg-white/5 backdrop-blur-lg border border-white/10 p-10 lg:p-14 rounded-[3rem] shadow-2xl"
         >
-          <p className="text-xs lg:text-sm text-primary-foreground/70 mb-6 font-bold uppercase tracking-[0.2em]">
+          <p className="text-xs lg:text-sm text-primary-foreground/70 dark:text-zinc-400 mb-6 font-bold uppercase tracking-[0.2em]">
             Have a project in mind? Just let us know!
           </p>
           <h2 className="font-heading text-4xl lg:text-7xl font-bold mb-10 leading-tight">

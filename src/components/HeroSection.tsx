@@ -14,14 +14,14 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <span className="inline-block border border-border rounded-full px-4 py-1.5 text-xs font-medium text-muted-foreground mb-6">
-              Innovative Digital Solutions
+            <span className="inline-block border border-border rounded-full px-4 py-1.5 text-xs font-bold text-primary uppercase tracking-widest mb-6">
+              AI-Powered Business Transformation
             </span>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 tracking-tight">
-              Automate Your <span className="text-primary italic">Business</span> With Zechsoft
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground leading-[1.1] mb-6 tracking-tighter">
+              Analyze. Automate. <span className="text-primary italic">Grow.</span>
             </h1>
-            <p className="text-muted-foreground text-base lg:text-xl max-w-md mb-8 leading-relaxed">
-              We build custom software, mobile apps, and AI solutions that streamline operations, boost productivity, and accelerate growth.
+            <p className="text-muted-foreground text-base lg:text-xl max-w-lg mb-8 leading-relaxed">
+              We diagnose business bottlenecks through AI analysis and deploy automated ecosystems that turn complex problems into scalable growth.
             </p>
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <Link

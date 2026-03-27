@@ -5,8 +5,8 @@ import { MessageSquare, X, Send, Bot, User, Sparkles, ArrowRight } from "lucide-
 const INITIAL_MESSAGE = {
   id: 1,
   type: "bot",
-  text: "Hi! I'm ZechAI. How can I help you transform your business today?",
-  suggestions: ["School ERP", "Hospital HIMS", "AI Solutions", "Request a Quote"]
+  text: "Welcome to Zech Soft. I'm ZechAI, your partner in growth. Shall we start by **Analyzing** your business bottlenecks or **Automating** your existing workflows?",
+  suggestions: ["Analyze Growth Leaks", "Automate Operations", "Request ROI Quote", "View Our Projects"]
 };
 
 const ZechBot: React.FC = () => {
@@ -32,19 +32,22 @@ const ZechBot: React.FC = () => {
 
     // Simulate AI response
     setTimeout(() => {
-      let responseText = "That's a great question! Our team of experts specializes in that area. Would you like to see our portfolio or talk to a human consultant?";
-      let suggestions: string[] = ["See Projects", "Contact Us"];
+      let responseText = "That's a strategic priority! Our methodology focuses on identifying friction and automating it away to drive measurable growth. Would you like to see how we've done this for other industries?";
+      let suggestions: string[] = ["View Case Studies", "Consult an Expert"];
 
       const lowerText = text.toLowerCase();
-      if (lowerText.includes("school") || lowerText.includes("erp")) {
-        responseText = "Our School Management System is a best-in-class ERP that handles everything from attendance to grading. It's used by 50+ institutions.";
-        suggestions = ["School ERP Features", "Pricing Inquiry"];
-      } else if (lowerText.includes("hospital") || lowerText.includes("hims")) {
-        responseText = "Zech HIMS is a comprehensive hospital solution covering OPD, IPD, Pharmacy, and Lab management with integrated billing.";
-        suggestions = ["HIMS Demo", "Case Studies"];
-      } else if (lowerText.includes("ai") || lowerText.includes("automation")) {
-        responseText = "We implement cutting-edge AI for process automation, predictive analytics, and intelligent chatbots like me!";
-        suggestions = ["AI Services", "Consultation"];
+      if (lowerText.includes("analyze") || lowerText.includes("leak") || lowerText.includes("bottleneck")) {
+        responseText = "Our **Growth Diagnostic** uses AI to analyze your operational data, identifying where manual friction is costing you money. We typical find 20-40% in hidden efficiency gains.";
+        suggestions = ["How it Works", "Book Diagnostic"];
+      } else if (lowerText.includes("automate") || lowerText.includes("operation") || lowerText.includes("workflow")) {
+        responseText = "We build **Autonomous Ecosystems**—custom ERPs, HIMS, and Apps that handle repetitive tasks automatically, so your team can focus on scaling.";
+        suggestions = ["Manufacturing ERP", "School/Hospital Tech"];
+      } else if (lowerText.includes("roi") || lowerText.includes("quote") || lowerText.includes("cost")) {
+        responseText = "We focus on **ROI-First Development**. Every solution is designed to pay for itself through reclaimed hours and accelerated revenue. Ready for a custom quote?";
+        suggestions = ["Request Quote", "Pricing Details"];
+      } else if (lowerText.includes("grow") || lowerText.includes("strategy") || lowerText.includes("scale")) {
+        responseText = "Scaling requires a **Bulletproof Digital Foundation**. From SEO-driven platforms to AI lead capture, we ensure your business is ready for global expansion.";
+        suggestions = ["Growth Services", "SEO Strategy"];
       }
 
       setMessages(prev => [...prev, {
