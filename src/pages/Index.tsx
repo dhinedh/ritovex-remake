@@ -10,7 +10,6 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import AutomationSection from "@/components/AutomationSection";
 import AISection from "@/components/AISection";
 import CTASection from "@/components/CTASection";
-import BlogSection from "@/components/BlogSection";
 import ServiceMarquee from "@/components/ServiceMarquee";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
@@ -35,7 +34,6 @@ const Index = () => {
       <TestimonialsSection />
       <AutomationSection />
       <AISection />
-      <BlogSection />
       <CTASection />
       
       <Footer />
