@@ -13,6 +13,7 @@ import bhupathiPhoto from "@/assets/team/bhupathi.jpg";
 import dhanushPhoto from "@/assets/team/dhanush.jpg";
 import jaganathanPhoto from "@/assets/team/jaganathan.jpg";
 import prathishPhoto from "@/assets/team/prathish.jpg";
+import perarasuPhoto from "@/assets/team/WhatsApp Image 2026-04-01 at 9.10.50 AM.jpeg";
 
 const fadeInUp = {
     hidden: { opacity: 0, y: 30, filter: "blur(4px)", scale: 0.98 },
@@ -271,11 +272,12 @@ const AboutUs = () => {
                             { name: "Jaganathan", role: "Marketing Manager", image: jaganathanPhoto },
                             { name: "Bhupathi", role: "Product Manager", image: bhupathiPhoto },
                             { name: "Himesh Priyan", role: "Associate Manager", image: himeshPhoto },
-                            { name: "Jabaspin", role: "Developer", image: jabaspinPhoto },
+                            { name: "Jabaspin", role: "Full stack Developer", image: jabaspinPhoto },
                             { name: "Dhanush B", role: "Front End Developer", image: dhanushBPhoto },
+                            { name: "Perarasu A", role: "Software Developer", image: perarasuPhoto },
                             { name: "Mohan", role: "Back End Developer", id: "NS3_cp6vSpI" },
                             { name: "Dhilip Kumar", role: "Cyber Security", id: "k3pW97tvVPs" },
-                            { name: "Prathish", role: "Developer", image: prathishPhoto }
+                            { name: "Prathish", role: "Software Tester", image: prathishPhoto }
                         ].map((member, i) => (
                             <motion.div
                                 key={i}
